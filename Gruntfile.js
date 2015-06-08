@@ -105,6 +105,33 @@ module.exports = function (grunt){
             }
         },
 
+        'string-replace': {
+            deploy: {
+                files: [{
+                    expand: true,
+                    cwd: 'dist/',
+                    src: '*.html',
+                    dest: 'dist/'
+                }],
+                options: {
+                    replacements: [{
+                        pattern: /<script src="\/\/localhost:35729\/livereload.js"><\/script>/ig,
+                        replacement: ''
+                    },
+                        {
+                            //  remove less compiler
+                            pattern: /<script src="assets\/scripts\/less.min.js"><\/script>/ig,
+                            replacement: ''
+                        },
+                        {
+                            //  replace .less extension to .css extension
+                             pattern: /.less"/ig,
+                            replacement: '.css"'
+                        }]
+                }
+            }
+        },
+
         watch: {
             css: {
                 files: 'assets/stylesheets/**',
@@ -134,9 +161,10 @@ module.exports = function (grunt){
     grunt.registerTask('concatCompressorCss', ['cssmin:build']); //ok
     grunt.registerTask('makeJs', ['concat:build', 'uglify:build']); //ok
     grunt.registerTask('injectFileToHtml', ['injector']); //ok
+    grunt.registerTask('removeUnuseFile', ['string-replace:deploy']); //ok
     // main task
     //grunt.registerTask('deploy', ['cleanDir', 'copyFileToDist', 'compileLess', 'concatCompressorCss', 'makeJs', 'injectFileToHtml']);
-    grunt.registerTask('deploy', ['cleanDir', 'copyFileToDist', 'compileLess', 'injectFileToHtml']);
+    grunt.registerTask('deploy', ['cleanDir', 'copyFileToDist', 'compileLess', 'removeUnuseFile']);
     grunt.registerTask('live', ['watch']);
 
 

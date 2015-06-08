@@ -21,5 +21,8 @@
     "grunt-contrib-watch": "*",
     "grunt-pagespeed": "*",
     "load-grunt-tasks": "*"
+  },
+  "devDependencies": {
+    "grunt-string-replace": "^1.2.0"
   }
 }
