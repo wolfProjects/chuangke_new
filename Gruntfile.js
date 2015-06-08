@@ -115,6 +115,7 @@ module.exports = function (grunt){
                 }],
                 options: {
                     replacements: [{
+                        //  remove livereload
                         pattern: /<script src="\/\/localhost:35729\/livereload.js"><\/script>/ig,
                         replacement: ''
                     },
