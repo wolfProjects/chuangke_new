@@ -4,10 +4,12 @@
 
 var app = {
     components: {
-    
+        kv: function(){
+            jQuery(".m-kv").slide({titCell: '.m-kv-head ul', mainCell:".m-kv-body ul", delayTime: 450, effect:'left', autoPlay:true, autoPage: '<li></li>'});
+        }
     },
     initApp: function (){
-    
+        this.components.kv();
     }
 };
 

@@ -5,8 +5,310 @@
 /*======================================================================
       Index
   ======================================================================*/
+/* title */
+.index-title {
+  padding: 40px 0 20px 0;
 
+  h2 {
+    .fs30;
+    .c_heavy;
+  }
 
+  .more {
+    .pr15;
+    margin-top: 7px;
+    .fs16;
+    .c_light;
+    background: url("../images/title-arrow.png") no-repeat right 4px;
+  }
+}
+
+/* activity */
+.index-activity {
+  padding: 0 60px 45px 60px;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.index-activity-bd {
+  a {
+    .c_white;
+  }
+  
+  img {
+    display: block;
+  }
+
+  .row {
+    .pr;
+  }
+
+  .item {
+    overflow:hidden;
+    
+    .info {
+      opacity: 0;
+    } 
+  }
+  
+  .item:hover {
+    .info {
+      opacity: 1;
+    }    
+  }
+
+  .info {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url("../images/index-activity-mask.png");
+  }
+
+  .title {
+    font-weight: normal;
+  }
+
+  .para {
+    .fs14;
+    .lh24;
+  }
+
+  .date {
+    margin-top: 20px;
+    color: #b9bfc2;
+  }
+
+  .row01 {
+    .info {
+      padding: 20px 30px 0 30px;
+
+      .title {
+        .fs34;
+        padding: 15px 0 10px 0;
+      }
+    }
+  }
+
+  .row02 {
+    width: 512px;
+
+    .item {
+      width: 256px;
+      height: 175px;
+      .pr;
+
+      .info {
+        padding: 20px 26px 0 26px;
+
+        .title {
+          .fs26;
+          padding: 6px 0 10px 0;
+        }
+
+        .date {
+          margin-top: 7px;
+        }
+      }
+    }
+  }
+}
+
+/* hot project */
+.index-hot-project {
+  background: #f5f6f7;
+  padding-bottom: 28px;
+}
+
+/* point and unit */
+.index-point-and-unit {
+  padding-bottom: 16px;
+  background: #fff;
+}
+
+/* index point */
+.index-point {
+  width: 475px;
+}
+
+.index-point-bd {
+  li {
+    overflow: hidden;
+    .mb30;
+
+    small {
+      display: block;
+      .c_light;
+    }
+    a {
+      .c_normal;
+    }
+    a:hover {
+      color: #2694bb;
+    }
+  }
+
+  .thumb {
+    display: block;
+    width: 72px;
+    height: 72px;
+    margin-right: 22px;
+    border: 1px solid #d9d9de;
+
+    a {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  .info {
+    width: 375px;
+
+    p {
+      .fs18;
+      margin: 15px 0 5px 0;
+    }
+  }
+}
+
+/* index-unit */
+.index-unit {
+  width: 470px;
+  margin-left: 75px;
+}
+
+.index-unit-bd {
+  position: relative;
+
+  .itemWrap {
+    overflow: hidden;
+    width: 470px;
+    height: 280px;
+
+    ul {
+      width: 1000%;
+    }
+
+    li {
+      display: none;
+      width: 470px;
+      height: 146px;
+
+      .transition(.2s);
+    }
+
+    li.active {
+      display: block;
+    }
+  }
+
+  .item {
+    width: 210px;
+  }
+
+  .thumb {
+    display: block;
+    border: 1px solid #f2f2f2;
+
+    img {
+      vertical-align: top;
+    }
+  }
+
+  dl {
+    margin-top: 3px;
+  }
+
+  dt {
+    padding: 19px 0 16px 0;
+
+    a {
+      .fs18;
+      .fb;
+      .c_normal;
+    }
+
+    a:hover {
+      color: #2694bb;
+    }
+  }
+
+  dd {
+    .fs12;
+    line-height: 18px;
+    .c_light;
+  }
+
+  .prev {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    background: #1aa9eb;
+    border-radius: 24px;
+    top: 82px;
+    left: -46px;
+    cursor: pointer;
+    .enableSelect;
+  }
+
+  .next {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    color: #fff;
+    font-family: 'Open Sans', Arial, 'Hiragino Sans GB', 'Microsoft YaHei', STHeiti, 'WenQuanYi Micro Hei', SimSun, sans-serif;
+    background: #1aa9eb;
+    border-radius: 24px;
+    top: 82px;
+    right: -46px;
+    cursor: pointer;
+    .enableSelect;
+  }
+
+  .enable {
+    background: gray;
+  }
+
+  .page {
+    position: absolute;
+    left: 0;
+    right: 0;
+    botttom: 10px;
+    text-align: center;
+
+    li {
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      margin: 0 16px;
+      font-size: 0;
+      background: #bbbbbb;
+      border-radius: 12px;
+    }
+
+    li.active {
+      background: #14a0e1;
+    }
+  }
+}
 /*======================================================================
       Responsive
   ======================================================================*/

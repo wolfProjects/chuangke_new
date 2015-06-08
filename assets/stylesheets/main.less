@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  background: #ededed;
 }
 
 a {
@@ -20,11 +21,19 @@ li {
   list-style: none;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .layout {
-  width: 1215px;
-  min-width: 1215px;
+  width: 1145px;
+  min-width: 1145px;
+  padding: 0 60px;
   margin-left: auto;
   margin-right: auto;
+  box-sizing: border-box;
 }
 
 .font-smooth {
@@ -42,8 +51,567 @@ input {
 /*======================================================================
       Main
   ======================================================================*/
+/* header */
+.header {
+  width: 1145px;
+  min-width: 1145px;
+  height: 90px;
+  margin: 0 auto;
+  background: #fff;
+  .box-shadow(0, 1px, 9px, rgba(4, 0, 0, .12));
+  position: relative;
+  z-index: 1000;
+}
 
+.header-logo {
+  width: 328px;
+  height: 90px;
+  margin-left: 30px;
+  background: url("../images/header-logo.png") no-repeat;
+}
 
+.header-logo-container {
+  display: inline-block;
+  width: 328px;
+  height: 90px;
+  position: relative;
+
+  .trangle01 {
+    position: absolute;
+    top: 18px;
+    left: 148px;
+    width: 10px;
+    height: 10px;
+    background: url("../images/header-trangle01.png") no-repeat;
+  }
+
+  .trangle02 {
+    position: absolute;
+    top: 26px;
+    left: 140px;
+    width: 4px;
+    height: 9px;
+    background: url("../images/header-trangle02.png") no-repeat;
+  }
+
+  .trangle03 {
+    position: absolute;
+    top: 35px;
+    left: 148px;
+    width: 7px;
+    height: 8px;
+    background: url("../images/header-trangle03.png") no-repeat;
+  }
+
+  .trangle04 {
+    position: absolute;
+    top: 35px;
+    left: 166px;
+    width: 8px;
+    height: 6px;
+    background: url("../images/header-trangle04.png") no-repeat;
+  }
+
+  .trangle05 {
+    position: absolute;
+    top: 43px;
+    left: 155px;
+    width: 8px;
+    height: 8px;
+    background: url("../images/header-trangle05.png") no-repeat;
+  }
+}
+
+.header-logo.animation {
+  .trangle01 { .animation(logoRotate, 3s, infinite); }
+  .trangle02 { .animation(logoRotate, 4s, infinite); }
+  .trangle03 { .animation(logoRotate, 4.2s, infinite); }
+  .trangle04 { .animation(logoRotate, 3.5s, infinite); }
+  .trangle05 { .animation(logoRotate, 2.6s, infinite); }
+}
+
+.header-nav {
+  padding: 28px 0 0 54px;
+
+  .item {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 0 0 0 16px;
+    position: relative;
+
+    a {
+      .c_strong;
+    }
+  }
+
+  .item:hover {
+    > a {
+      color: #1aa9eb;
+    }
+
+    .header-subnav {
+      display: block;
+    }
+  }
+
+  .item.hasSubNav {
+    background: url("../images/header-menu-trangle-n.png") no-repeat right 16px;
+  }
+
+  .item.hasSubNav:hover {
+    background-image: url("../images/header-menu-trangle-h.png");
+  }
+}
+
+.header-subnav {
+  display: none;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  width: 110px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+
+  .subitem {
+    text-align: center;
+
+    a {
+      display: block;
+      padding: 10px 0;
+    }
+  }
+
+  .subitem:hover {
+    a {
+      color: #1aa9eb;
+    }
+  }
+
+  .triangle {
+    width: 15px;
+    height: 8px;
+    background: url("../images/header-menu-trangle2.png") no-repeat;
+    position: absolute;
+    top: -8px;
+    left: 48px;
+  }
+}
+
+.header-signbar {
+  height: 60px;
+  line-height: 60px;
+  margin: 16px 0 0 37px;
+  border-left: 1px solid #ccc;
+}
+
+.header-sign-before {
+  padding: 0 0 0 20px;
+
+  span {
+    display: inline-block;
+    margin: 0 20px;
+    .fs14;
+    text-decoration: none;
+    .c_light;
+    cursor: pointer;
+  }
+
+  span:hover {
+    color: #2694bb;
+  }
+}
+
+.header-sign-after {
+  margin-left: 50px;
+  position: relative;
+
+  .header-droplist-wrap {
+    display: inline-block;
+
+  }
+
+  .header-user {
+    padding: 0 20px 0 0;
+    color: #6c7280;
+    .fs14;
+
+    background: url("../images/trangle-down-small.png") no-repeat right center;
+  }
+
+  ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -25px;
+    width: 122px;
+    padding: 10px 0 12px 0;
+    text-align: center;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+
+    li {
+      padding: 9px 0;
+      line-height: 18px;
+    }
+
+    a {
+      display: block;
+      .c_normal;
+    }
+
+    a:hover{
+      .c_blue;
+    }
+  }
+
+  ul:after {
+    content:'';
+    width: 17px;
+    height: 8px;
+    background: url("../images/border-arrow-up.png") no-repeat;
+    position: absolute;
+    top: -8px;
+    left: 53px;
+  }
+
+  .header-droplist-wrap:hover ul{
+    display: block;
+  }
+}
+
+/* footer */
+.footer {
+  width: 1145px;
+  padding: 54px 60px 40px 60px;
+  margin: 0 auto;
+  min-height: 262px;
+  background: #f7f9fa;
+}
+
+@keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-webkit-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-o-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+@-moz-keyframes logoRotate {
+  from {
+    .transform(rotate(0deg));
+  }
+  to {
+    .transform(rotate(360deg));
+  }
+}
+
+.footer-logo {
+  width: 187px;
+  height: 118px;
+  margin-right: 20px;
+
+  .footer-logo-container {
+    display: inline-block;
+    width: 145px;
+    height: 85px;
+    background: url("../images/footer-logo.png") no-repeat;
+    background-size: 145px 85px;
+    position: relative;
+
+    .trangle01 {
+      position: absolute;
+      top: 0;
+      left: 107px;
+      width: 6px;
+      height: 12px;
+      background: url("../images/footer-logo-trangle01.png") no-repeat;
+
+      .animation(logoRotate, 2s, infinite);
+    }
+
+    .trangle02 {
+      position: absolute;
+      top: -6px;
+      left: 115px;
+      width: 11px;
+      height: 11px;
+      background: url("../images/footer-logo-trangle02.png") no-repeat;
+
+      .animation(logoRotate, 2.5s, infinite);
+    }
+
+    .trangle03 {
+      position: absolute;
+      top: 10px;
+      left: 115px;
+      width: 8px;
+      height: 10px;
+      background: url("../images/footer-logo-trangle03.png") no-repeat;
+
+      .animation(logoRotate, 3s, infinite);
+    }
+
+    .trangle04 {
+      position: absolute;
+      top: 19px;
+      left: 120px;
+      width: 9px;
+      height: 8px;
+      background: url("../images/footer-logo-trangle04.png") no-repeat;
+
+      .animation(logoRotate, 3.5s, infinite);
+    }
+
+    .trangle05 {
+      position: absolute;
+      top: 10px;
+      left: 133px;
+      width: 10px;
+      height: 7px;
+      background: url("../images/footer-logo-trangle05.png") no-repeat;
+
+      .animation(logoRotate, 5s, infinite);
+    }
+  }
+}
+
+.footer-intel {
+  margin: 2px 0 0 0;
+  color: #999;
+  font-size: 12px;
+
+  a {
+    display: block;
+
+    img {
+      display: block;
+    }
+  }
+}
+
+.footer-nav {
+}
+
+.footer-nav-item {
+  width: 172px;
+  padding-left: 18px;
+  border-left: 1px solid #d9d9de;
+
+  li {
+    padding: 9px 0;
+  }
+
+  a {
+    color: #000;
+    font-size: 14px;
+  }
+
+  a:hover {
+    color: #2694bb;
+  }
+}
+
+.footer-layer {
+  margin-top: 45px;
+  text-align: center;
+  .fs12;
+  .c_black;
+}
+
+/* component */
+/* ----------------------------------------
+ * Kv
+ * ---------------------------------------- */
+.m-kv {
+  overflow: hidden;
+  width: 1145px;
+  min-width: 1145px;
+  height: 350px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.m-kv-body {
+  .m-kv-item {
+    height: 350px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
+    a {
+      display: block;
+      height: 350px;
+    }
+  }
+}
+
+.m-kv-head {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+
+  li {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin: 0 10px;
+    background: #fff;
+    border-radius: 12px;
+    cursor: pointer;
+  }
+
+  .on {
+    background: #1aa9eb;
+  }
+}
+
+/* ----------------------------------------
+ * m-project-list
+ * ---------------------------------------- */
+.m-project-list {
+  margin: 0 -5px 0 -5px;
+}
+
+.m-project-list-item {
+  width: 246px;
+  height: 448px;
+  margin: 0 5px 18px 5px;
+  background: #fff;
+  border: 1px solid #d9d9de;
+
+  .thumb {
+    display: block;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      .transform(scale(1.02));
+      .transition(all, .45s);
+    }
+  }
+
+  .desc {
+    padding: 21px 18px 0 18px;
+    background: url("../images/project-item-bg.png") repeat-x;
+
+    dt {
+      height: 45px;
+      line-height: 24px;
+      margin-bottom: 13px;
+      font-weight: bolder;
+
+      a {
+        .fs18;
+        .fb;
+        .c_normal;
+      }
+
+      a:hover {
+        color: #2694bb;
+      }
+    }
+
+    dd {
+      line-height: 18px;
+      .fs12;
+      .c_normal;
+    }
+  }
+}
+
+.m-project-list-item:hover {
+  -webkit-box-shadow: 0 10px 8px -6px #ccc;
+  -moz-box-shadow: 0 10px 8px -6px #ccc;
+  box-shadow: 0 10px 8px -6px #ccc;
+
+  .thumb {
+    img {
+      .transform(scale(1));
+    }
+  }
+}
+
+/* ----------------------------------------
+ * m-info-meta
+ * ---------------------------------------- */
+
+.m-info-meta {
+  line-height: 18px;
+  margin: 13px 0 0 0;
+  .fs12;
+  .c_normal;
+
+  .main {
+    float: left;
+    width: 125px;
+    padding: 0 0 0 6px;
+  }
+
+  .status {
+    float: right;
+    font-size: 18px;
+    height: 45px;
+    line-height: 45px;
+    padding-left: 23px;
+    margin-top: 4px;
+    font-weight: bold;
+    border-left: 1px solid #ccc;
+  }
+}
+
+/* info meta status */
+.doing {
+  .m-info-meta {
+    .status {
+      color: #69c54c;
+    }
+  }
+}
+
+.finished{
+  .m-info-meta {
+    .status {
+      color: #dd3d57;
+    }
+  }
+}
+
+.incoming {
+  .m-info-meta {
+    .status {
+      .c_blue;
+    }
+  }
+}
+
+.ready {
+  .m-info-meta {
+    .status {
+      color: #ef8116;
+    }
+  }
+}
 /*======================================================================
       Responsive
   ======================================================================*/
