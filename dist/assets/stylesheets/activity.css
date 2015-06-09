@@ -7,49 +7,49 @@
 }
 /* font size */
 .fs9 {
-  font-size: 9px !important;
+  font-size: 9px;
 }
 .fs10 {
-  font-size: 10px !important;
+  font-size: 10px;
 }
 .fs12 {
-  font-size: 12px !important;
+  font-size: 12px;
 }
 .fs14 {
-  font-size: 14px !important;
+  font-size: 14px;
 }
 .fs16 {
-  font-size: 16px !important;
+  font-size: 16px;
 }
 .fs18 {
-  font-size: 18px !important;
+  font-size: 18px;
 }
 .fs20 {
-  font-size: 20px !important;
+  font-size: 20px;
 }
 .fs22 {
-  font-size: 22px !important;
+  font-size: 22px;
 }
 .fs24 {
-  font-size: 24px !important;
+  font-size: 24px;
 }
 .fs26 {
-  font-size: 26px !important;
+  font-size: 26px;
 }
 .fs28 {
-  font-size: 28px !important;
+  font-size: 28px;
 }
 .fs30 {
-  font-size: 30px !important;
+  font-size: 30px;
 }
 .fs32 {
-  font-size: 32px !important;
+  font-size: 32px;
 }
 .fs34 {
-  font-size: 34px !important;
+  font-size: 34px;
 }
 .fs36 {
-  font-size: 36px !important;
+  font-size: 36px;
 }
 /* font style */
 .fn {
@@ -230,184 +230,184 @@ button {
 }
 /* margin */
 .mt5 {
-  margin-top: 5px !important;
+  margin-top: 5px;
 }
 .mt10 {
-  margin-top: 10px !important;
+  margin-top: 10px;
 }
 .mt15 {
-  margin-top: 15px !important;
+  margin-top: 15px;
 }
 .mt20 {
-  margin-top: 20px !important;
+  margin-top: 20px;
 }
 .mt25 {
-  margin-top: 25px !important;
+  margin-top: 25px;
 }
 .mt30 {
-  margin-top: 30px !important;
+  margin-top: 30px;
 }
 .mt35 {
-  margin-top: 35px !important;
+  margin-top: 35px;
 }
 .mt40 {
-  margin-top: 40px !important;
+  margin-top: 40px;
 }
 .mt45 {
-  margin-top: 45px !important;
+  margin-top: 45px;
 }
 .mt50 {
-  margin-top: 50px !important;
+  margin-top: 50px;
 }
 .mt55 {
-  margin-top: 55px !important;
+  margin-top: 55px;
 }
 .mt60 {
-  margin-top: 60px !important;
+  margin-top: 60px;
 }
 .mt70 {
-  margin-top: 70px !important;
+  margin-top: 70px;
 }
 .mt80 {
-  margin-top: 80px !important;
+  margin-top: 80px;
 }
 .mt100 {
-  margin-top: 100px !important;
+  margin-top: 100px;
 }
 .mr5 {
-  margin-right: 5px !important;
+  margin-right: 5px;
 }
 .mr10 {
-  margin-right: 10px !important;
+  margin-right: 10px;
 }
 .mr15 {
-  margin-right: 15px !important;
+  margin-right: 15px;
 }
 .mr20 {
-  margin-right: 20px !important;
+  margin-right: 20px;
 }
 .mr25 {
-  margin-right: 25px !important;
+  margin-right: 25px;
 }
 .mr30 {
-  margin-right: 30px !important;
+  margin-right: 30px;
 }
 .mr35 {
-  margin-right: 35px !important;
+  margin-right: 35px;
 }
 .mr40 {
-  margin-right: 40px !important;
+  margin-right: 40px;
 }
 .mr45 {
-  margin-right: 45px !important;
+  margin-right: 45px;
 }
 .mr50 {
-  margin-right: 50px !important;
+  margin-right: 50px;
 }
 .mr55 {
-  margin-right: 55px !important;
+  margin-right: 55px;
 }
 .mr60 {
-  margin-right: 60px !important;
+  margin-right: 60px;
 }
 .mr70 {
-  margin-right: 70px !important;
+  margin-right: 70px;
 }
 .mr80 {
-  margin-right: 80px !important;
+  margin-right: 80px;
 }
 .mr100 {
-  margin-right: 100px !important;
+  margin-right: 100px;
 }
 .mb5 {
-  margin-bottom: 5px !important;
+  margin-bottom: 5px;
 }
 .mb10 {
-  margin-bottom: 10px !important;
+  margin-bottom: 10px;
 }
 .mb15 {
-  margin-bottom: 15px !important;
+  margin-bottom: 15px;
 }
 .mb20 {
-  margin-bottom: 20px !important;
+  margin-bottom: 20px;
 }
 .mb25 {
-  margin-bottom: 25px !important;
+  margin-bottom: 25px;
 }
 .mb30 {
-  margin-bottom: 30px !important;
+  margin-bottom: 30px;
 }
 .mb35 {
-  margin-bottom: 35px !important;
+  margin-bottom: 35px;
 }
 .mb40 {
-  margin-bottom: 40px !important;
+  margin-bottom: 40px;
 }
 .mb45 {
-  margin-bottom: 45px !important;
+  margin-bottom: 45px;
 }
 .mb50 {
-  margin-bottom: 50px !important;
+  margin-bottom: 50px;
 }
 .mb55 {
-  margin-bottom: 55px !important;
+  margin-bottom: 55px;
 }
 .mb60 {
-  margin-bottom: 60px !important;
+  margin-bottom: 60px;
 }
 .mb70 {
-  margin-bottom: 70px !important;
+  margin-bottom: 70px;
 }
 .mb80 {
-  margin-bottom: 80px !important;
+  margin-bottom: 80px;
 }
 .mb100 {
-  margin-bottom: 100px !important;
+  margin-bottom: 100px;
 }
 .ml5 {
-  margin-left: 5px !important;
+  margin-left: 5px;
 }
 .ml10 {
-  margin-left: 10px !important;
+  margin-left: 10px;
 }
 .ml15 {
-  margin-left: 15px !important;
+  margin-left: 15px;
 }
 .ml20 {
-  margin-left: 20px !important;
+  margin-left: 20px;
 }
 .ml25 {
-  margin-left: 25px !important;
+  margin-left: 25px;
 }
 .ml30 {
-  margin-left: 30px !important;
+  margin-left: 30px;
 }
 .ml35 {
-  margin-left: 35px !important;
+  margin-left: 35px;
 }
 .ml40 {
-  margin-left: 40px !important;
+  margin-left: 40px;
 }
 .ml45 {
-  margin-left: 45px !important;
+  margin-left: 45px;
 }
 .ml50 {
-  margin-left: 50px !important;
+  margin-left: 50px;
 }
 .ml55 {
-  margin-left: 55px !important;
+  margin-left: 55px;
 }
 .ml60 {
-  margin-left: 60px !important;
+  margin-left: 60px;
 }
 .ml70 {
-  margin-left: 70px !important;
+  margin-left: 70px;
 }
 .ml80 {
-  margin-left: 80px !important;
+  margin-left: 80px;
 }
 .ml100 {
-  margin-left: 100px !important;
+  margin-left: 100px;
 }
 /* padding */
 .pt5 {
@@ -635,7 +635,7 @@ button {
 .activity-list .item {
   position: relative;
   margin-bottom: 10px;
-  font-size: 12px !important;
+  font-size: 12px;
   line-height: 18px;
   border: 1px solid #e7e7e7;
 }
@@ -651,7 +651,7 @@ button {
 .activity-list .title {
   padding: 24px 0 0 0;
   margin-bottom: 11px;
-  font-size: 18px !important;
+  font-size: 18px;
   font-weight: normal;
 }
 .activity-list .title a {
@@ -688,39 +688,6 @@ button {
 }
 .activity-detail-hd .primary-picture img {
   display: block;
-}
-.activity-detail-hd .newly-update {
-  padding-bottom: 15px;
-}
-.activity-detail-hd .newly-update .hd {
-  margin-bottom: 23px;
-  font-size: 25px;
-  color: #333;
-}
-.activity-detail-hd .newly-update li {
-  padding-left: 16px;
-  margin-bottom: 26px;
-}
-.activity-detail-hd .newly-update .date {
-  color: #1aa9eb;
-  font-size: 20px !important;
-  padding: 0 0 0 18px;
-  margin: 0 0 10px -18px;
-  background: url("../images/listStyle01.png") no-repeat left center;
-}
-.activity-detail-hd .newly-update .title {
-  font-size: 16px !important;
-  margin-bottom: 8px;
-}
-.activity-detail-hd .newly-update .title a {
-  color: #333;
-}
-.activity-detail-hd .newly-update .title a:hover {
-  color: #1aa9eb;
-}
-.activity-detail-hd .newly-update .desc {
-  font-size: 14px !important;
-  color: #666;
 }
 .activity-detail-bd .hd {
   margin-bottom: 15px;

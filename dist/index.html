@@ -21,7 +21,7 @@
 
 <!-- header -->
 <header class="pr header">
-    <div class="pr clearfix">
+    <div class="header-bd pr clearfix">
         <a class="header-logo fl" href="">
             <span class="header-logo-container">
                 <i class="trangle01"></i>
@@ -76,14 +76,37 @@
                 <a href="">众创论坛</a>
             </div>
         </nav>
+
         <div class="header-float">
-            <a class="item item01" href=""></a>
+            <a class="item item01 active" href=""></a>
             <i class="item item02"></i>
             <i class="item item03"></i>
             <a class="item item04" href=""></a>
         </div>
     </div>
 </header>
+
+<div class="header-tips hide">
+    <!-- wechat -->
+    <div class="item header-wechat hide">
+        <h3>坚守创新，持续实践，乐于分享追求美好生活创意</h3>
+        <div class="qrcode text-center">
+            <img src="assets/images/footer-qrcode.png" alt="" width="103" height="103"/>
+            <p>扫描二维码分享给好友</p>
+        </div>
+    </div>
+    <!-- end wechat -->
+    <!-- search -->
+    <div class="item header-search hide">
+        <form action="">
+            <div class="header-search-body">
+                <input type="text" class="header-search-text fl"/>
+                <input type="button" class="header-search-btn fl" value="search"/>
+            </div>
+        </form>
+    </div>
+    <!-- end search -->
+</div>
 <!-- end header -->
 
 <!-- component: kv -->
@@ -195,7 +218,7 @@
 
         <div class="hot-project-bd">
             <!-- component: product list -->
-            <div class="m-project-list mt45">
+            <div class="m-project-list">
                 <ul class="clearfix">
                     <li class="m-project-list-item fl finished hot">
                         <i class="badge"></i>
@@ -477,7 +500,7 @@
                 </div>
                 <div class="form-group clearfix pt10">
                     <div class="main">
-                        <input class="form-btn-submit enableSelect" type="button" name="" id="" value="登录" tabindex="6"/>
+                        <input class="form-btn-submit enableSelect" type="button" name="" id="loginTEST" value="登录" tabindex="6"/>
                         <p class="c_black fs14 lh25 mt10 c_light text-right" style="width: 320px;"><span class="toRegistration c_blue mr10 form-state-link">注册新用户</span><span class="toForgotPassword form-state-link c_normal">忘记密码</span></p>
                     </div>
                 </div>

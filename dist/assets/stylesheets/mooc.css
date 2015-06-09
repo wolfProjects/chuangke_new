@@ -625,137 +625,67 @@ button {
 /* --------------------------------------------
  * animation
  * -------------------------------------------- */
-/* page: zhongchuang */
-.zhongchuang {
+/* Page: mooc detail */
+.mooc {
   background: #fff;
 }
-/* page: zhongchuang list */
-.zhongchuang-summary {
-  overflow: hidden;
-  height: 400px;
-  padding: 0;
-  position: relative;
-}
-.zhongchuang-summary .primary-img {
+.mooc .row-title small {
   display: block;
-}
-.zhongchuang-summary .para {
-  position: absolute;
-  top: 234px;
-  left: 60px;
-  right: 60px;
-  line-height: 30px;
-  color: #666;
-}
-.zhongchuang-summary .toggleSwitch {
-  position: absolute;
-  left: 0;
-  bottom: 4px;
-  width: 100%;
-}
-.zhongchuang-summary .toggle {
-  display: inline-block;
-  width: 48px;
-  height: 26px;
-  background: url("../images/zhongchuang-summary-btn-n.png") no-repeat;
-  cursor: pointer;
-}
-.zhongchuang-summary.active {
-  height: auto;
-}
-.zhongchuang-summary.active .toggleSwitch {
-  bottom: 9px;
-}
-.zhongchuang-summary.active .toggle {
-  background: url("../images/zhongchuang-summary-btn-a.png") no-repeat;
-}
-.zhongchuang-list {
-  padding-bottom: 30px;
-}
-.zhongchuang-list-bd .list {
-  margin: 0 -5px 0 -5px;
-}
-.zhongchuang-list-bd .list .item {
-  width: 208px;
-  height: 278px;
-  line-height: 18px;
-  padding: 25px;
-  margin: 0 5px 10px 5px;
-  border: 1px solid #e7e7e7;
-  transition: all 0.3s ease-out;
-}
-.zhongchuang-list-bd .list .item:hover {
-  transform: translate(-2%, 0);
-}
-.zhongchuang-list-bd .list .title {
-  margin-bottom: 17px;
-  font-size: 20px;
-  font-weight: normal;
-}
-.zhongchuang-list-bd .list .title a {
-  color: #333;
-  transition: all .2s;
-}
-.zhongchuang-list-bd .list .title a:hover {
-  color: #1aa9eb;
-}
-.zhongchuang-list-bd .list .desc {
-  margin-bottom: 16px;
-  font-size: 12px;
-  color: #666;
-}
-.zhongchuang-list-bd .list .thumb {
-  display: block;
-  width: 160px;
-  height: 70px;
-  margin-bottom: 20px;
-}
-.zhongchuang-list-bd .list .thumb img {
-  display: block;
-  height: 100%;
-}
-.zhongchuang-list-bd .list .tags {
-  font-size: 12px;
+  font-size: 18px;
   color: #999;
+  font-weight: 200;
+  padding-top: 4px;
 }
-.zhongchuang-list-bd .list .tags a {
-  color: #1aa9eb;
+.mooc .mooc-detail {
+  padding-bottom: 130px;
 }
-.zhongchuang-list-bd .list .tags a:hover {
-  text-decoration: underline;
-}
-.zhongchuang-list-ft {
-  margin-top: -5px;
-}
-/* page: zhongchuang detail */
-.zhongchuang-detail {
-  padding-top: 50px;
-}
-.zhongchuang-detail-bd * {
+.mooc .mooc-detail-body {
   line-height: 28px;
-  color: #666;
   font-size: 14px;
+  color: #666;
+}
+.mooc .mooc-detail-body * {
   margin-bottom: 15px;
 }
-.zhongchuang-detail-bd .detail-logo {
-  width: 178px;
-  height: 178px;
-  margin: 0 28px 40px 0;
-  border: 1px solid #d9d9de;
+.mooc .mooc-detail-body a {
+  color: #1aa9eb;
 }
-.zhongchuang-detail-bd .detail-logo img {
-  display: block;
-  width: 100%;
-  height: 100%;
-}
-.zhongchuang-detail-bd .detail-title {
-  margin: 4px 0 12px 0;
-  font-size: 30px;
+.mooc .mooc-detail-body h1,
+.mooc .mooc-detail-body h2,
+.mooc .mooc-detail-body h3,
+.mooc .mooc-detail-body h4,
+.mooc .mooc-detail-body h5,
+.mooc .mooc-detail-body h6 {
+  padding: 0;
+  margin-bottom: 20px;
   color: #333;
-  font-weight: normal;
 }
-.zhongchuang-detail-bd .detail-title-desc {
-  font-size: 24px;
+.mooc .mooc-detail-body img {
+  max-width: 100%;
+}
+.mooc .lecturer {
+  border: 1px solid #e7e7e7;
+  padding-bottom: 31px;
+}
+.mooc .lecturer .lecturer-bd {
+  padding-left: 51px;
+  padding-top: 25px;
+}
+.mooc .lecturer .lecturer-bd img {
+  width: 68px;
+  height: 68px;
+  border-radius: 68px;
+}
+.mooc .lecturer .lecturer-info {
+  padding-left: 10px;
+  padding-top: 4px;
+}
+.mooc .lecturer .lecturer-info dt {
+  font-size: 20px;
+  color: #333;
+}
+.mooc .lecturer .lecturer-info dd {
+  font-size: 16px;
   color: #999;
-  margin-bottom: 10px;
+  padding-top: 8px;
 }
