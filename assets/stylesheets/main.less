@@ -302,6 +302,134 @@ input {
   }
 }
 
+.header-float {
+  position: absolute;
+  right: -60px;
+  top: 90px;
+  width: 60px;
+  z-index: 100;
+
+  .item {
+    display: block;
+    height: 60px;
+    margin-bottom: 1px;
+    cursor: pointer;
+  }
+
+  .item01 {
+    background: #fff url('../images/header-float01-n.png') no-repeat center center;
+  }
+
+  .item02 {
+    background: #fff url('../images/header-float02-n.png') no-repeat center center;
+  }
+
+  .item03 {
+    background: #fff url('../images/header-float03-n.png') no-repeat center center;
+  }
+
+  .item04 {
+    background: #fff url('../images/header-float04-n.png') no-repeat center center;
+  }
+
+  .item01.active,
+  .item01:hover {
+    background: #14a0e1 url('../images/header-float01-h.png') no-repeat center center;
+  }
+
+  .item02.active,
+  .item02:hover {
+    background: #14a0e1 url('../images/header-float02-h.png') no-repeat center center;
+  }
+
+  .item03.active,
+  .item03:hover {
+    background: #14a0e1 url('../images/header-float03-h.png') no-repeat center center;
+  }
+
+  .item04.active,
+  .item04:hover {
+    background: #14a0e1 url('../images/header-float04-h.png') no-repeat center center;
+  }
+}
+
+.header-tips {
+  height: 180px;
+  background: #fff;
+  position: absolute;
+  top: 90px;
+  left: 50%;
+  width: 1145px;
+  margin: 0 0 0 -572px;
+  z-index: 900;
+
+  .item {
+    width: 1145px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.header-wechat {
+  position: relative;
+
+  h3 {
+    padding: 82px 0 0 230px;
+    .fs24;
+    color: #a1a1a1;
+    font-weight: normal;
+  }
+
+  .qrcode {
+    position: absolute;
+    top: 30px;
+    right: 205px;
+    width: 150px;
+
+    p {
+      margin-top: 5px;
+      .fs14;
+      color: #a1a1a1;
+    }
+  }
+}
+
+.header-search {
+  position: relative;
+}
+
+.header-search-body {
+  overflow: hidden;
+  width: 772px;
+  margin: 65px 0 0 185px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.header-search-text {
+  width: 630px;
+  line-height: 60px;
+  padding: 0 15px;
+  color: #666;
+  .fs26;
+  border: none;
+}
+
+.header-search-btn {
+  width: 140px;
+  line-height: 60px;
+  text-align: center;
+  .fs24;
+  color: #fff;
+  background: #d8d8d8;
+  border: none;
+  cursor: pointer;
+}
+
+.header-search-btn:hover {
+  background: #ccc;
+}
+
 /* header float panel */
 .m-floatpanel {
   .m-form {
