@@ -61,6 +61,23 @@ var app = {
                 $('.registrationPanel').fadeIn();
             },
             init: function (){
+                // TEST Login test
+                $('#loginTEST').click(function () {
+                    var validFormResult = true;
+
+                    //  如果通过登陆验证, 则关闭登陆面板 并且将头部登陆注册的结构
+                    //  header-sign-before 加上class: hide
+                    //  geader-sign-after  去除class: hide
+                    if (validFormResult) {
+                        //  hide login panel
+                        $$('.m-floatpanel').hide();
+
+                        //  show user panel in page header
+                        $('.header-sign-before').addClass('hide');
+                        $('.header-sign-after').removeClass('hide');
+                    }
+                });
+
                 // to login
                 $('.toLogIn').click(function (){
                     $('.m-floatpanel').hide();

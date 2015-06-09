@@ -27,16 +27,25 @@
 
   .item {
     overflow:hidden;
-    
+
     .info {
       opacity: 0;
-    } 
+    }
+
+    img {
+      transition: transform .8s ease-out;
+      transition-delay: .2s;
+    }
   }
-  
+
   .item:hover {
     .info {
       opacity: 1;
-    }    
+    }
+
+    img {
+      transform: scale(1.1);
+    }
   }
 
   .info {
@@ -125,6 +134,7 @@
     }
     a {
       .c_normal;
+      transition: all .2s ease-out;
     }
     a:hover {
       color: #2694bb;
@@ -214,6 +224,7 @@
       .fs18;
       .fb;
       .c_normal;
+      transition: all .2s ease-out;
     }
 
     a:hover {
