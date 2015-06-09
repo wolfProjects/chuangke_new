@@ -7,9 +7,9 @@
 
     <!-- injector:css -->
     <!-- basic css-->
-    <link rel="stylesheet.css" href="assets/stylesheets/base.css"/>
-    <link rel="stylesheet.css" href="assets/stylesheets/main.css"/>
-    <link rel="stylesheet.css" href="assets/stylesheets/components.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/base.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/components.css"/>
     <!-- endinjector -->
 
     <!--[if lt IE9]>
@@ -19,7 +19,7 @@
 <body>
 <style>
     .container {
-        width: 1025px;
+        width: 1145px;
         padding: 0 60px;
         margin: 50px auto;
         background: #fff;
@@ -40,8 +40,169 @@
 
 <div class="container clearfix">
     <main class="main fl"></main>
-    <aside class="side fr">
+    <aside class="side fr" style="background: #fff">
         <!--  components write here -->
+
+            <!-- component: search -->
+            <div class="m-search">
+                <input class="search-input " placeholder="请输入关键字" type="text">
+                <a class="search-btn" href="#">搜索</a>
+            </div>
+            <!-- end search -->
+
+            <!-- component: selector -->
+
+             <div class="m-selector mt10">
+
+                 <div class="item">
+                    <div class="item-hd">
+                        <img src="assets/images/time-icon.png" class="icon">
+                        <h4>活动状态</h4>
+                    </div>
+                     <ul class="item-bd  clearfix">
+                         <li><a href="#" class="active">全部</a></li>
+                         <li><a href="#">未开始</a></li>
+                         <li><a href="#">进行中</a></li>
+                         <li><a href="#">已结束</a></li>
+                    </ul>
+                 </div>
+
+                 <div class="item">
+                     <div class="item-hd">
+                         <img src="assets/images/address-icon.png" class="icon">
+                         <h4>地址</h4>
+                     </div>
+                     <ul class="item-bd clearfix">
+                         <li><a href="#" class="active">地址</a></li>
+                         <li><a href="#">上海</a></li>
+                         <li><a href="#">北京</a></li>
+                         <li><a href="#">广州</a></li>
+                         <li><a href="#">广州</a></li>
+                         <li><a href="#">广州</a></li>
+                         <li><a href="#">广州</a></li>
+                     </ul>
+                 </div>
+
+             </div>
+            <!-- end selector -->
+
+
+            <!-- component: panel -->
+            <div class="m-panel mt10">
+                <div class="m-panel-hd">
+                    <img src="assets/images/book-icon.png" class="icon">
+                    <h4>申请套件</h4>
+                </div>
+
+                <div class="m-panel-bd">
+                    <p class="text">创客大爆炸的套件暂未开放购买，请您通过我们的线上申请表格来申请套件，我们会在您提交申请后尽快与您联系。</p>
+                    <a class="m-btn-white" href="#">在线申请</a>
+                </div>
+            </div>
+            <!-- end panel -->
+
+        <!-- component: selector -->
+
+        <div class="m-selector mt10">
+
+            <div class="item">
+                <div class="item-hd">
+                    <img src="assets/images/time-icon.png" class="icon">
+                    <h4>套件类型</h4>
+                </div>
+                <ul class="item-bd clearfix">
+                    <li><a href="#" class="active">全部</a></li>
+                    <li><a href="#">未开始</a></li>
+                    <li><a href="#">进行中</a></li>
+                    <li><a href="#">已结束</a></li>
+                    <li><a href="#">Nodered</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <!-- end selector -->
+
+        <!-- component: article -->
+        <div class="m-article mt10">
+            <div class="m-article-hd">
+                <img src="assets/images/course-icon.png" class="icon">
+                <h4>相关公开课</h4>
+                <a class="more fr">更多 > </a>
+            </div>
+            <ul class="m-article-bd">
+                <li class="text">Liunx 开发源代码代码代码代码代码代码代码代码</li>
+                <li class="text">Liunx 开发源代码</li>
+                <li class="text">Liunx 开发源代码</li>
+                <a class="m-btn-blue mt25" href="#">在线申请</a>
+            </ul>
+        </div>
+        <!-- end article -->
+
+        <!-- component: article -->
+        <div class="m-article mt10">
+            <div class="m-article-hd">
+                <img src="assets/images/course-icon.png" class="icon">
+                <h4>相关公开课</h4>
+                <a class="more fr">更多 > </a>
+            </div>
+            <ul class="m-article-bd">
+                <li class="clearfix ">
+                    <img src="assets/images/MC_7.jpg" class="fl article-img">
+                    <div class="text-box fl">
+                        <dl>
+                            <dt>创客学院5月分享</dt>
+                            <dd>2015年5月27日</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="clearfix ">
+                    <img src="assets/images/MC_7.jpg" class="fl article-img">
+                    <div class="text-box fl">
+                        <dl>
+                            <dt>创客学院5月分享会分享分享</dt>
+                            <dd>2015年5月27日</dd>
+                        </dl>
+                    </div>
+                </li>
+                <li class="clearfix">
+                    <img src="assets/images/MC_7.jpg" class="fl article-img">
+                    <div class="text-box fl">
+                        <dl>
+                            <dt>创客学院5月分享会分享分享</dt>
+                            <dd>2015年5月27日</dd>
+                        </dl>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- end article -->
+
+        <!-- component: map -->
+
+        <div class="m-map mt10">
+            <div class="m-sidebar-hd m-map-hd">
+                <img src="assets/images/address-icon.png" class="icon">
+                <h4>活动地点</h4>
+                <p>上海市徐汇区石龙路581号117室AC117智能硬件加速器</p>
+            </div>
+            <img src="assets/images/MC_3.jpg" class="m-map-imges">
+
+        </div>
+        <!-- end map -->
+
+        <!-- component: calendar -->
+        <div class="m-calendar mt10">
+            <div class="m-sidebar-hd m-calendar-hd">
+                <img src="assets/images/calendar-icon.png" class="icon">
+                <h4>活动日历</h4>
+                <a class="all-time fr">所有日期活动</a>
+                <p>2015年5月28日    19:00~21:00   </p>
+            </div>
+
+
+        </div>
+        <!-- end calendar -->
+
 
         <!--  end components write here -->
     </aside>

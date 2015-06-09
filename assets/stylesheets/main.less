@@ -34,6 +34,16 @@ li {
   margin-left: auto;
   margin-right: auto;
   box-sizing: border-box;
+  zoom:1;
+}
+
+.layout:before,.layout:after {
+  content:"";
+  display:table;
+}
+.layout:after {
+  clear:both;
+  overflow:hidden;
 }
 
 .font-smooth {
@@ -46,6 +56,18 @@ p, a, button, span {
 
 input {
   outline: none;
+}
+
+.main {
+  float: left;
+  width: 650px;
+  min-height: 1000px;
+}
+
+.side {
+  float: right;
+  width: 345px;
+  min-height: 1000px;
 }
 
 /*======================================================================

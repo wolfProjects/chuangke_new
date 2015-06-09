@@ -7,10 +7,10 @@
 
     <!-- injector:css -->
     <!-- basic css-->
-    <link rel="stylesheet.css" href="assets/stylesheets/base.css"/>
-    <link rel="stylesheet.css" href="assets/stylesheets/main.css"/>
-    <link rel="stylesheet.css" href="assets/stylesheets/components.css"/>
-    <link rel="stylesheet.css" href="assets/stylesheets/index.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/base.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/main.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/components.css"/>
+    <link rel="stylesheet" href="assets/stylesheets/index.css"/>
     <!-- endinjector -->
 
     <!--[if lt IE9]>
@@ -23,7 +23,7 @@
 <header class="pr header">
     <div class="pr clearfix">
         <a class="header-logo fl" href="">
-            <span class="header-logo-container" href="/">
+            <span class="header-logo-container">
                 <i class="trangle01"></i>
                 <i class="trangle02"></i>
                 <i class="trangle03"></i>
@@ -34,8 +34,8 @@
 
         <div class="header-signbar fr fs14">
             <div class="header-sign-before">
-                <span href="" class="header-logInBtn">登陆</span>
-                <span href="" class="header-registerBtn">注册</span>
+                <span class="header-logInBtn">登陆</span>
+                <span class="header-registerBtn">注册</span>
             </div>
             <div class="header-sign-after hide">
                 <div class="header-droplist-wrap">
@@ -90,13 +90,13 @@
 <section class="m-kv">
     <div class="m-kv-body">
         <ul>
-            <li class="m-kv-item" style="background-image: url(http://localhost:63342/project/assets/images/index-kv-01.jpg);">
+            <li class="m-kv-item" style="background-image: url(assets/images/index-kv-01.jpg);">
                 <a href="" target="_blank"></a>
             </li>
-            <li class="m-kv-item" style="background-image: url(http://localhost:63342/project/assets/images/index-kv-01.jpg);">
+            <li class="m-kv-item" style="background-image: url(assets/images/index-kv-01.jpg);">
                 <a href="" target="_blank"></a>
             </li>
-            <li class="m-kv-item" style="background-image: url(http://localhost:63342/project/assets/images/index-kv-01.jpg);">
+            <li class="m-kv-item" style="background-image: url(assets/images/index-kv-01.jpg);">
                 <a href="" target="_blank"></a>
             </li>
         </ul>
@@ -109,7 +109,7 @@
 <!-- end kv -->
 
 <div class="container">
-    <!-- index activity -->
+    <!-- zhongchuang activity -->
     <section class="index-activity layout">
         <div class="row-title clearfix">
             <a class="fr more" href="">更多</a>
@@ -184,9 +184,9 @@
             </div>
         </div>
     </section>
-    <!-- end index activity -->
+    <!-- end zhongchuang activity -->
 
-    <!-- index hot project -->
+    <!-- zhongchuang hot project -->
     <section class="index-hot-project layout">
         <div class="row-title clearfix">
             <a class="fr more" href="">更多</a>
@@ -271,11 +271,11 @@
             <!-- end product list-->
         </div>
     </section>
-    <!-- end  index hot project -->
+    <!-- end  zhongchuang hot project -->
 
     <!-- point and unit -->
     <section class="index-point-and-unit layout clearfix">
-        <!-- index point -->
+        <!-- zhongchuang point -->
         <div class="index-point fl">
             <div class="row-title clearfix">
                 <a class="fr more" href="">更多</a>
@@ -314,9 +314,9 @@
                 </ul>
             </div>
         </div>
-        <!-- end index point -->
+        <!-- end zhongchuang point -->
 
-        <!-- index unit -->
+        <!-- zhongchuang unit -->
         <div class="index-unit fl">
             <div class="row-title clearfix">
                 <a class="fr more" href="">更多</a>
@@ -390,7 +390,7 @@
                 </ul>
             </div>
         </div>
-        <!-- end index unit -->
+        <!-- end zhongchuang unit -->
     </section>
 </div>
 
@@ -433,6 +433,199 @@
     <div class="footer-layer f12 c_heavy">Copyright © 2015 Maker collider  All Rights Reserved.</div>
 </footer>
 <!-- end footer -->
+
+
+<!-- component: m-floatpanel -->
+<!-- logInPanel -->
+<div class="m-floatpanel logInPanel noLabel hide">
+    <div class="m-floatpanel-bd">
+        <div class="m-floatpanel-title clearfix">
+            <i class="m-floatpanel-close"></i>
+            <h2 class="fl">登陆</h2>
+        </div>
+
+        <!-- form -->
+        <div class="m-form">
+            <form action="">
+                <!-- 表单验证API(使用方法看下方dom示例)：
+                        - 为需要出现错误提示的表单行div.form-group加上class: .form-error
+                        - 在input或者textarea的dom后面追加div.form-validation的dom
+                -->
+                <div class="form-group clearfix form-error">
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="输入用户名/邮箱" tabindex="6"/>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>用户名或密码不正确</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="输入密码" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group code clearfix form-error">
+                    <div class="main">
+                        <input class="form-control" type="text" style="width: 188px;" name="" id="" placeholder="输入图片密码" tabindex="6"/>
+                        <a class="form-validationImgCode" href="">
+                            <img src="assets/images/vCode.jpg" alt="" width="126" height="48"/>
+                        </a>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>验证码不正确</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group clearfix pt10">
+                    <div class="main">
+                        <input class="form-btn-submit enableSelect" type="button" name="" id="" value="登录" tabindex="6"/>
+                        <p class="c_black fs14 lh25 mt10 c_light text-right" style="width: 320px;"><span class="toRegistration c_blue mr10 form-state-link">注册新用户</span><span class="toForgotPassword form-state-link c_normal">忘记密码</span></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+    </div>
+    <div class="m-floatpanel-mask"></div>
+</div>
+<!-- end logInPanel -->
+
+<!-- registrationPanel -->
+<div class="m-floatpanel registrationPanel hide">
+    <div class="m-floatpanel-bd">
+        <div class="m-floatpanel-title clearfix">
+            <i class="m-floatpanel-close"></i>
+            <h2 class="fl">注册新用户</h2>
+        </div>
+
+        <!-- form -->
+        <div class="m-form">
+            <form action="">
+                <div class="form-group clearfix">
+                    <div class="label">
+                        <label for="">用户名：</label>
+                    </div>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="由字母、数字、下划线组成" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="label">
+                        <label for="">邮箱：</label>
+                    </div>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="输入你的常用邮箱" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group code clearfix">
+                    <div class="label">
+                        <label for="">验证码：</label>
+                    </div>
+                    <div class="main">
+                        <input class="form-control" type="text" style="width: 188px;" name="" id="" placeholder="输入验证码" tabindex="6"/>
+                        <span class="form-code getValidationCode enableSelect">获取验证码</span>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="label">
+                        <label for="">密码：</label>
+                    </div>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="6-20位大小写英文字母、符号或数字" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="label">
+                        <label for="">确认密码：</label>
+                    </div>
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="请再次输入密码" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix pt10">
+                    <div class="label">
+                        <label for="">&nbsp;</label>
+                    </div>
+                    <div class="main">
+                        <input class="form-btn-submit enableSelect" type="button" name="" id="" value="立即注册" tabindex="6"/>
+                        <p class="c_black fs14 lh25 mt10 c_light">点击“立即注册”，即表示您同意并愿意遵守<br />MakerCollider&nbsp;<a href="" class="c_normal">服务条款</a></p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+
+        <!-- success panel -->
+        <div class="m-floatpanel-success text-center hide">
+            <i class="icon-floatpanel-success"></i>
+            <p class="text">注册成功</p>
+            <p><span class="btn toLogIn">登陆</span></p>
+        </div>
+    </div>
+    <div class="m-floatpanel-mask"></div>
+</div>
+<!-- end registrationPanel -->
+
+<!-- resetPasswordPanel -->
+<div class="m-floatpanel resetPasswordPanel noLabel hide">
+    <div class="m-floatpanel-bd">
+        <div class="m-floatpanel-title clearfix">
+            <i class="m-floatpanel-close"></i>
+            <h2 class="fl">重置密码</h2>
+        </div>
+
+        <!-- form -->
+        <div class="m-form">
+            <form action="">
+                <div class="form-group clearfix">
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="输入注册的邮箱" tabindex="6"/>
+                        <!-- tips如果需要隐藏, 请给下面的.form-tips挂class:hide -->
+                        <p class="form-tips">
+                            <i class="icon-form-tips"></i>
+                            <span class="c_blue fs14">此邮箱未被注册</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group code clearfix">
+                    <div class="main">
+                        <input class="form-control" type="text" style="width: 188px;" name="" id="" placeholder="输入验证码" tabindex="6"/>
+                        <span class="form-code getValidationCode enableSelect">获取验证码</span>
+                        <!-- tips如果需要隐藏, 请给下面的.form-tips挂class:hide -->
+                        <p class="form-tips">
+                            <span class="c_normal fs12">验证码已发送至你的邮箱186********@163.com</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="输入新密码" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <div class="main">
+                        <input class="form-control" type="text" name="" id="" placeholder="确认新密码" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix pt10">
+                    <div class="main">
+                        <input class="form-btn-submit enableSelect resetPasswordNextStep" type="button" name="" id="" value="下一步" tabindex="6"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+
+        <!-- success panel -->
+        <div class="m-floatpanel-success text-center hide">
+            <i class="icon-floatpanel-success"></i>
+            <p class="text">重置密码成功</p>
+            <p><span class="btn toLogIn">登陆</span></p>
+        </div>
+    </div>
+    <div class="m-floatpanel-mask"></div>
+</div>
+<!-- end resetPasswordPanel -->
+<!-- end float panel -->
 
 <!-- injector:js -->
 <!-- page script -->

@@ -165,12 +165,6 @@ section {
   margin: 0;
   padding: 0;
 }
-a,
-button,
-input,
-textarea {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 /*html5*/
 article,
 aside,
@@ -712,7 +706,7 @@ button {
   padding-bottom: 16px;
   background: #fff;
 }
-/* index point */
+/* zhongchuang point */
 .index-point {
   width: 475px;
 }
@@ -752,7 +746,7 @@ button {
   font-size: 18px !important;
   margin: 15px 0 5px 0;
 }
-/* index-unit */
+/* zhongchuang-unit */
 .index-unit {
   width: 470px;
   margin-left: 75px;

@@ -165,12 +165,6 @@ section {
   margin: 0;
   padding: 0;
 }
-a,
-button,
-input,
-textarea {
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
 /*html5*/
 article,
 aside,
@@ -734,7 +728,7 @@ button {
   color: #333;
 }
 .activity-detail-bd .bd {
-  line-height: 30px;
+  line-height: 28px;
   font-size: 14px;
   color: #666;
 }

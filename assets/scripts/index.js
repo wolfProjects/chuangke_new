@@ -44,12 +44,12 @@ var index = {
                     }
 
                     //  set current pagination
-                    $('.index-unit-bd .page li').eq(index.components.tab.index).addClass('active').siblings().removeClass('active');
+                    $('.zhongchuang-unit-bd .page li').eq(index.components.tab.index).addClass('active').siblings().removeClass('active');
                 }
 
                 //  auto create pagination via get list item's length
                 function createPagination() {
-                    var pageAmount = $('.index-unit .column').length;
+                    var pageAmount = $('.zhongchuang-unit .column').length;
                     //  create first liDomStr
                     var liDomStr = '<li class="active"></li>';
                     //  create another
@@ -58,9 +58,9 @@ var index = {
                     }
 
                     //  insert to page
-                    $('.index-unit-bd .page').append(liDomStr);
+                    $('.zhongchuang-unit-bd .page').append(liDomStr);
 
-                    $('.index-unit-bd .page li').mouseover(function () {
+                    $('.zhongchuang-unit-bd .page li').mouseover(function () {
                         var curIndex = $(this).index();
                         index.components.tab.index = curIndex;
 
@@ -77,11 +77,11 @@ var index = {
     },
 
     initUi: function (){
-        index.components.tab.core({wrap: '.index-unit-bd', items: '.itemWrap li', prev: '.prev', next: '.next'});
+        index.components.tab.core({wrap: '.zhongchuang-unit-bd', items: '.itemWrap li', prev: '.prev', next: '.next'});
     }
 };
 
 $(function (){
-    // init index 
+    // init zhongchuang
     index.initUi();
 });

@@ -458,6 +458,7 @@
   .main {
     float: left;
     width: 600px;
+    min-height: 0;
 
     * {
       vertical-align: middle;
@@ -801,6 +802,58 @@
     }
   }
 }
+
+/* newly-update */
+.m-newly-update {
+  padding-bottom: 15px;
+
+  .hd {
+    margin-bottom: 23px;
+    font-size: 25px;
+    .c_heavy;
+  }
+
+  li {
+    padding-left: 16px;
+    margin-bottom: 26px;
+  }
+
+  .date {
+    .c_blue;
+    .fs20;
+    padding: 0 0 0 18px;
+    margin: 0 0 10px -18px;
+    background: url("../images/listStyle01.png") no-repeat left center;
+  }
+
+  .title {
+    .fs16;
+    margin-bottom: 8px;
+
+    a {
+      .c_heavy;
+      transition: all .2s ease-out;
+    }
+
+    a:hover {
+      .c_blue;
+    }
+  }
+
+  .desc {
+    .fs14;
+    .c_normal;
+  }
+
+  .thumb {
+    img {
+      display: block;
+      width: 45px;
+      height: 45px;
+    }
+  }
+}
+
 /*======================================================================
       Responsive
   ======================================================================*/

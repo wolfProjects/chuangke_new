@@ -57,8 +57,8 @@ module.exports = function (grunt){
         // concat js
         concat: {
             build: {
-                src:'assets/scripts/index.js',
-                dest:'dist/assets/scripts/index.js'
+                src:'assets/scripts/zhongchuang.js',
+                dest:'dist/assets/scripts/zhongchuang.js'
             }
         },
 
@@ -125,9 +125,14 @@ module.exports = function (grunt){
                             replacement: ''
                         },
                         {
+                            //  replace link tag's rel="stylesheet/less" to rel="stylesheet"
+                            pattern: /stylesheet\/less/ig,
+                            replacement: 'stylesheet'
+                        },
+                        {
                             //  replace .less extension to .css extension
-                             pattern: /.less"/ig,
-                            replacement: '.css"'
+                             pattern: /.less"\/>/ig,
+                            replacement: '.css"/>'
                         }]
                 }
             }
