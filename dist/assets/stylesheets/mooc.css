@@ -367,6 +367,9 @@ button {
 .ml5 {
   margin-left: 5px;
 }
+.ml8 {
+  margin-left: 8px;
+}
 .ml10 {
   margin-left: 10px;
 }
@@ -688,4 +691,27 @@ button {
   font-size: 16px;
   color: #999;
   padding-top: 8px;
+}
+.mooc-list-body .img-box {
+  float: left;
+}
+.mooc-list-body .img-box img {
+  display: block;
+}
+.mooc-list-body .type3 img {
+  width: 430px;
+}
+.mooc-list-body .type1 {
+  width: 210px;
+}
+.mooc-list-body .type1 img {
+  width: 210px;
+  height: 270px;
+}
+.mooc-list-body .type2 {
+  width: 210px;
+}
+.mooc-list-body .type2 img {
+  width: 210px;
+  height: 130px;
 }

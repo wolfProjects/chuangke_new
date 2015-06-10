@@ -78,3 +78,82 @@
   }
 
 }
+
+//mooc-list-body
+
+.mooc-list-body{
+  .img-box{
+    float: left;
+    position: relative;
+    img{
+      display: block;
+      -webkit-transition: width .5s ease-in-out; /* Safari */
+      transition: width .5s ease-in-out;
+    }
+    overflow: hidden;
+
+  }
+
+  .text-bg{
+
+    color: #fff;
+    background: #000;
+    opacity: .5;
+    height: 32px;
+    width: 100%;
+    -webkit-transition: width 1s ease-in-out; /* Safari */
+    transition: width 1s ease-in-out;
+  }
+  .text-warp{
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    width: 100%;
+  }
+  .img-box:hover {
+    .text-bg{
+      opacity: 1;
+    }
+
+  }
+  .img-box:hover{
+    img{
+      width: 110%!important;
+    }
+  }
+  .text{
+    position: absolute;bottom: 0;
+    height: 32px;
+    line-height: 32px;
+    font-size: 16px;
+    text-indent: 1em;
+    color: #fff;
+  }
+  
+  .type3{
+    img{
+      width: 430px;
+    }
+    width: 430px;
+    height: 270px;
+    overflow: hidden;
+  }
+  .type1{
+    width: 210px;
+    height: 270px;
+    overflow: hidden;
+    img{
+      width: 210px;
+    }
+  }
+
+  .type2 {
+    width: 210px;
+    height: 130px;
+    overflow: hidden;
+    img {
+      width: 210px;
+    }
+  }
+
+}
