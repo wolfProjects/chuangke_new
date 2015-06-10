@@ -597,19 +597,19 @@ button {
  * border
  * -------------------------------------------- */
 .border1 {
-  border: 1px solid #d9d9de;
+  border: 1px solid #e7e7e7;
 }
 .border1t {
-  border-top: 1px solid #d9d9de;
+  border-top: 1px solid #e7e7e7;
 }
 .border1r {
-  border-right: 1px solid #d9d9de;
+  border-right: 1px solid #e7e7e7;
 }
 .border1b {
-  border-bottom: 1px solid #d9d9de;
+  border-bottom: 1px solid #e7e7e7;
 }
 .border1l {
-  border-left: 1px solid #d9d9de;
+  border-left: 1px solid #e7e7e7;
 }
 /* --------------------------------------------
  * shadow
@@ -694,24 +694,73 @@ button {
 }
 .mooc-list-body .img-box {
   float: left;
+  position: relative;
+  -webkit-transition: box-shadow 0.3s ease-in-out;
+  /* Safari */
+  transition: box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+}
+.mooc-list-body .img-box a {
+  display: block;
+  height: 100%;
+  color: #fff;
 }
 .mooc-list-body .img-box img {
   display: block;
+}
+.mooc-list-body .text-bg {
+  color: #fff;
+  background: #000;
+  opacity: .5;
+  height: 32px;
+  width: 100%;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  /* Safari */
+  transition: opacity 0.3s ease-in-out;
+  transition-delay: .1s;
+}
+.mooc-list-body .text-warp {
+  position: absolute;
+  z-index: 9;
+  bottom: 0;
+  width: 100%;
+}
+.mooc-list-body .img-box:hover .text-bg {
+  opacity: 0.7;
+}
+.mooc-list-body .img-box:hover {
+  box-shadow: 0 2px 5px #999;
+}
+.mooc-list-body .text {
+  position: absolute;
+  bottom: 0;
+  height: 32px;
+  line-height: 32px;
+  font-size: 16px;
+  text-indent: 1em;
+  color: #fff;
+}
+.mooc-list-body .type3 {
+  width: 430px;
+  height: 270px;
+  overflow: hidden;
 }
 .mooc-list-body .type3 img {
   width: 430px;
 }
 .mooc-list-body .type1 {
   width: 210px;
+  height: 270px;
+  overflow: hidden;
 }
 .mooc-list-body .type1 img {
   width: 210px;
-  height: 270px;
 }
 .mooc-list-body .type2 {
   width: 210px;
+  height: 130px;
+  overflow: hidden;
 }
 .mooc-list-body .type2 img {
   width: 210px;
-  height: 130px;
 }

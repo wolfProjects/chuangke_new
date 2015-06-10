@@ -597,19 +597,19 @@ button {
  * border
  * -------------------------------------------- */
 .border1 {
-  border: 1px solid #d9d9de;
+  border: 1px solid #e7e7e7;
 }
 .border1t {
-  border-top: 1px solid #d9d9de;
+  border-top: 1px solid #e7e7e7;
 }
 .border1r {
-  border-right: 1px solid #d9d9de;
+  border-right: 1px solid #e7e7e7;
 }
 .border1b {
-  border-bottom: 1px solid #d9d9de;
+  border-bottom: 1px solid #e7e7e7;
 }
 .border1l {
-  border-left: 1px solid #d9d9de;
+  border-left: 1px solid #e7e7e7;
 }
 /* --------------------------------------------
  * shadow
@@ -688,4 +688,56 @@ button {
 }
 .unit-tab-img li img {
   cursor: pointer;
+}
+.zhongchuang-list {
+  padding-bottom: 30px;
+}
+.unit-list-bd .list {
+  margin: 0 -5px 0 -5px;
+}
+.unit-list-bd .list .item {
+  width: 208px;
+  height: 250px;
+  margin: 0 5px 10px 5px;
+  border: 1px solid #e7e7e7;
+  transition: all 0.3s ease-out;
+}
+.unit-list-bd .list .item-content {
+  height: 248px;
+  border: 3px solid #fff;
+}
+.unit-list-bd .list .item-content:hover {
+  border: 3px solid #f5f5f5;
+}
+.unit-list-bd .list .item-content:hover .image {
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.unit-list-bd .list .image {
+  width: 200px;
+}
+.unit-list-bd .list .img-box {
+  overflow: hidden;
+  height: 181px;
+  border-bottom: 1px solid #f5f5f7;
+  margin-left: -3px;
+  margin-right: -3px;
+}
+.unit-list-bd .list .item:hover .img-box {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.unit-list-bd .list p {
+  width: 100%;
+  text-align: center;
+}
+.unit-list-bd .list .name {
+  font-size: 16px;
+  color: #333;
+  margin-top: 11px;
+}
+.unit-list-bd .list .small {
+  font-size: 12px;
+  color: #999;
+  margin-top: 3px;
 }

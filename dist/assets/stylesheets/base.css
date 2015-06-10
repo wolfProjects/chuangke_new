@@ -597,19 +597,19 @@ button {
  * border
  * -------------------------------------------- */
 .border1 {
-  border: 1px solid #d9d9de;
+  border: 1px solid #e7e7e7;
 }
 .border1t {
-  border-top: 1px solid #d9d9de;
+  border-top: 1px solid #e7e7e7;
 }
 .border1r {
-  border-right: 1px solid #d9d9de;
+  border-right: 1px solid #e7e7e7;
 }
 .border1b {
-  border-bottom: 1px solid #d9d9de;
+  border-bottom: 1px solid #e7e7e7;
 }
 .border1l {
-  border-left: 1px solid #d9d9de;
+  border-left: 1px solid #e7e7e7;
 }
 /* --------------------------------------------
  * shadow

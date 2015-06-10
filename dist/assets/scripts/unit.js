@@ -4,8 +4,9 @@ var unit = {
     components: {
         unit_tap: function () {
             $('.mall-img').click(function(){
-                var imgsrc = $(this).context.currentSrc;
+                var imgsrc = this.src;
                 $('.big-img').attr('src',imgsrc);
+                console.log(imgsrc)
             })
 
         }
