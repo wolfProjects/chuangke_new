@@ -1,0 +1,609 @@
+//  Created by aotutu (Siso brand interactive team.) 2015
+
+@import "base";
+
+.project {
+  .summary {
+    .btnWrap {
+      display: inline-block;
+      overflow: hidden;
+      width: 167px;
+      height: 45px;
+      position: relative;
+
+      .btn {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 36px;
+      }
+
+      input {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 200px;
+        opacity: 0;
+        cursor: pointer;
+      }
+    }
+
+    .btnWrap:hover {
+      .btn {
+        background: #2abcff;
+      }
+    }
+  }
+}
+
+/* Page: project introduce */
+.project-introduce {
+
+}
+
+/* project introduce header */
+.project-summary {
+  background: #fbfcfc;
+
+  .section-title {
+    padding: 52px 0 12px 0;
+    .fs30;
+    .c_heavy;
+  }
+
+  /* section summary */
+  .summary {
+    position: relative;
+
+    .toEdit {
+      position: absolute;
+      right: 20px;
+      top: 38px;
+      padding: 0 20px;
+    }
+
+    .section-inner {
+      position: relative;
+      min-height: 350px;
+      background-position: right top;
+      background-repeat: no-repeat;
+    }
+
+    .main {
+      width: 530px;
+      min-height: 0;
+
+      .project-status {
+        position: absolute;
+        top: 38px;
+        left: 0;
+        font-size: 26px;
+        color: #333;
+
+        * { vertical-align: middle;}
+
+        .favorite {
+          min-width: 1px;
+          line-height: 30px;
+          padding: 0 30px;
+          margin-left: 5px;
+        }
+      }
+
+      h1 {
+        width: 512px;
+        .c_black;
+        .fs30;
+        padding-top: 92px;
+        margin-bottom: 14px;
+        font-weight: bolder;
+      }
+
+      .desc {
+        width: 465px;
+        line-height: 26px;
+        .fs14;
+        .c_normal;
+      }
+
+      .tags {
+        margin-top: 22px;
+        .fs14;
+        .c_blue;
+
+        a {
+          .c_blue;
+          margin-right: 15px;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .project-status.doing {
+        color: #17b346;
+      }
+    }
+
+    /* summary picture */
+    .summary-picture {
+      margin-top: 40px;
+    }
+
+    .summary-picture-bd {
+      width: 450px;
+      height: 270px;
+      background: #fff;
+      border: 1px solid #e7e7e7;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 268px;
+      }
+    }
+  }
+
+  .summary-picture-hd {
+    display: none;
+  }
+}
+
+/* project introduce body */
+.project-introduce-bd {
+  padding-top: 102px;
+  padding-bottom: 40px;
+  background: #fff;
+}
+
+/* Page: project introduce member */
+.project-introduceMember {
+  background: #fff;
+}
+
+.project-introduceMember-bd {
+  padding-bottom: 40px;
+}
+
+/* Page: project list */
+.project-list {
+  padding-bottom: 70px;
+  background: #fff;
+}
+
+.project-list-hd {
+  .title {
+    margin: 40px 0 25px 0;
+
+    .search {
+      margin-top: -10px;
+
+      .text {
+        width: 250px;
+        height: 45px;
+        line-height: 17px;
+        padding: 14px 10px;
+        .fs16;
+        .c_normal;
+        background: #fff;
+        .box-sizing(border-box);
+        border: 1px solid #e7e7e7;
+        border-right: none;
+      }
+
+      .submit {
+        width: 90px;
+        height: 45px;
+        line-height: 45px;
+        text-align: center;
+        .fs18;
+        .c_white;
+        background: #1aa9eb;
+        border: none;
+        cursor: pointer;
+      }
+    }
+
+    ul {
+      margin: 0 0 0 -30px;
+    }
+
+    li {
+      float: left;
+      padding: 0 30px;
+      .fs20;
+      background: url("../images/project-list-hd-split.png") no-repeat left center;
+
+      a {
+        .c_normal;
+        font-weight: normal;
+        -webkit-font-smoothing: subpixel-antialiased;
+        transition: all .2s ease-out;
+      }
+
+      a:hover {
+        .c_blue;
+      }
+    }
+
+    li.active {
+      position: relative;
+      top: -3px;
+
+      a {
+        font-weight: bolder;
+        .c_blue;
+        .fs26;
+      }
+    }
+  }
+
+  .body-hd {
+    margin-bottom: 50px;
+  }
+
+  .body-bd {
+    margin-bottom: 16px;
+
+    .m-pagination {
+      margin: 8px 0 0 0;
+    }
+  }
+}
+
+/* section logic */
+.logic {
+  padding-bottom: 32px;
+  background: #fff;
+}
+
+.logic-hd {
+  overflow: hidden;
+  padding: 52px 0 12px 0;
+
+  .btn.changeLogic {
+    display: none;
+  }
+
+  ul { margin-left: -39px;}
+
+  li {
+    float: left;
+    padding-left: 39px;
+    margin-right: 39px;
+    .fs30;
+    .c_heavy;
+    background: url("../images/logic-split.png") no-repeat left center;
+
+    span {
+      cursor: pointer;
+    }
+  }
+
+  li.active {
+    .c_blue;
+    font-weight: bolder;
+  }
+}
+
+.logic-bd {
+  position: relative;
+  margin-top: 20px;
+
+  .item {
+    min-height: 516px;
+  }
+
+  .operateWrap {
+    position: absolute;
+    top: -69px;
+    right: 20px;
+  }
+
+  .logic-item-logic {
+    .btn {
+      min-width: 0;
+      padding: 0 15px;
+    }
+  }
+
+  .logic-item-unit {
+    display: none;
+
+    .operateWrap {
+      top: -85px;
+    }
+  }
+
+  .unitSelect {
+    display: block;
+    position: relative;
+    top: 5px;
+    display: none;
+  }
+
+  .cancelChange {
+    color: #666;
+    background: #f1f1f1;
+  }
+
+  .cancelChange:hover{
+    color: #fff;
+    background: #999;
+  }
+}
+
+/* Editing status */
+.project.editing {
+  margin-bottom: 0;
+  /* summary */
+  .summary {
+    .section-inner {
+      min-height: 440px;
+      padding: 0 0 65px 0;
+    }
+
+    .name {
+      display: block;
+      width: 498px;
+      height: 70px;
+      line-height: 38px;
+      padding: 15px 10px;
+      margin: 50px 0 22px 0;
+      border: 1px solid #e7e7e7;
+      .box-sizing(border-box);
+      .c_normal;
+      .fs30;
+      outline: none;
+      resize: none;
+    }
+
+    .description {
+      display: block;
+      width: 498px;
+      height: 250px;
+      line-height: 30px;
+      padding: 15px 10px;
+      border: 1px solid #e7e7e7;
+      .box-sizing(border-box);
+      .c_normal;
+      .fs14;
+      outline: none;
+      resize: none;
+    }
+
+    .summary-picture {
+      width: 450px;
+      height: 270px;
+      margin-top: 50px;
+      background: #fff;
+      border: 1px solid #e7e7e7;
+    }
+
+    .uploadImg {
+      height: 270px;
+    }
+
+    .uploadImg-before {
+      padding: 118px;
+      height: 104px;
+      text-align: center;
+
+      .tips {
+        line-height: 22px;
+        margin-top: 25px;
+        .fs14;
+        .c_light;
+      }
+    }
+
+    .uploadImg-after {
+      display: none;
+      text-align: center;
+      position: relative;
+
+      img {
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+/* ----------------------------------------
+ * m-logic-editor
+ * ---------------------------------------- */
+.logic-editor {
+}
+
+.logic-editor-bd {
+  #cytoscape-wrap {
+    height: 405px;
+  }
+
+  #cytoscape-wrap:hover {
+    outline: 1px dashed #1aa9eb;
+  }
+}
+
+.logic-editor-ft {
+  margin-top: 8px;
+
+  .type-intro {
+    display: inline-block;
+    .transition(margin-left, .8s);
+
+    .type-item {
+      float: left;
+      width: 96px;
+      padding: 56px 0 0 0;
+      line-height: 42px;
+      .fs18;
+      .c_light;
+    }
+
+    .item01 {
+      background: url("../images/cytoscape-type-action.png") no-repeat center 0;
+    }
+
+    .item02 {
+      background: url("../images/cytoscape-type-app.png") no-repeat center 0;
+    }
+
+    .item03 {
+      background: url("../images/cytoscape-type-service.png") no-repeat center 0;
+    }
+  }
+
+  .type-intro.active {
+    margin-left: 200px;
+  }
+
+  #cytoscape-editor {
+    position: absolute;
+    left: 0;
+    bottom: -80px;
+    opacity: 0;
+    padding: 10px;
+    background: #f9f9f9;
+    .transition(all, 0.8s);
+    transition-delay: 0.3s!important;
+    -webkit-transition-delay: 0.3s!important;
+    -moz-transition-delay: 0.3s!important;
+    -o-transition-delay: 0.3s!important;
+  }
+
+  #cytoscape-editor.active {
+    bottom: -48px;
+    opacity: 1;
+    box-shadow: 0 0 8px #ccc;
+  }
+
+  .cytoscape-btn {
+    background: #fff;
+    padding: 5px 15px;
+    margin-right: 5px;
+    color: #666;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .cytoscape-btn:hover {
+    -webkit-box-shadow: inset 0 0 4px #ccc;
+    -moz-box-shadow: inset 0 0 4px #ccc;
+    box-shadow: inset 0 0 4px #ccc;
+  }
+
+  .operator-wrap {
+    margin-top: 20px;
+    .c_normal;
+
+    h5 {
+      font-size: 18px;
+    }
+
+    #add_type {
+      .fs14;
+      margin-top: 10px;
+    }
+
+    #add_description {
+      height: 32px;
+      line-height: 32px;
+      padding: 0 15px;
+    }
+
+    .btn {
+      min-width: 1px;
+      height: 30px;
+      line-height: 30px;
+      padding: 0 15px!important;
+    }
+
+    #add_btn {
+      margin-top: 5px;
+    }
+  }
+}
+
+// project list
+.logic .project-unit-list { margin-top: 36px;}
+
+.project-unit-list {
+  .listWrap {
+    overflow: hidden;
+  }
+
+  .list {
+    width: 120%;
+  }
+
+  .item {
+    width: 388px;
+    min-height: 0;
+    margin: 0 40px 30px 0;
+  }
+
+  .thumb {
+    width: 173px;
+    height: 148px;
+    border: 1px solid #d9d9de;
+    margin-right: 15px;
+    cursor: pointer;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .info {
+    width: 150px;
+
+    dt {
+      a {
+        .fs16;
+        line-height: 24px;
+        .c_normal;
+        font-weight: bolder;
+      }
+
+      a:hover {
+        .c_blue;
+      }
+    }
+
+    dd {
+      line-height: 24px;
+      margin-top: 5px;
+      .fs14;
+      color: #555;
+    }
+
+    .type {
+      margin-top: 25px;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+
+  /* selected */
+  .item.selected {
+    .thumb {
+      border-color: #1aa9eb;
+      box-shadow: 0 0 5px #76ccf3;
+      position: relative;
+    }
+
+    .selectedMask {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("../images/project-unit-list-selected.png") no-repeat center center;
+      cursor: pointer;
+    }
+  }
+}
