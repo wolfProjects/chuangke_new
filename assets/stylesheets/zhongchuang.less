@@ -48,7 +48,180 @@
   height: auto;
 
   .toggleSwitch {
-      bottom: 9px;
+    bottom: 9px;
+  }
+
+  .toggle {
+    background: url("../images/zhongchuang-summary-btn-a.png") no-repeat;
+  }
+}
+
+.zhongchuang-list {
+  padding-bottom: 30px;
+}
+
+.zhongchuang-list-bd {
+  .list {
+    margin: 0 -5px 0 -5px;
+
+    .item {
+      width: 208px;
+      height: 278px;
+      .lh18;
+      padding: 25px;
+      margin: 0 5px 10px 5px;
+      border: 1px solid #e7e7e7;
+      transition: all .3s ease-out;
+    }
+
+    .item:hover {
+      transform: translate(-2%, 0);
+    }
+
+    .title {
+      margin-bottom: 17px;
+      .fs20;
+      .fn;
+
+      a {
+        .c_heavy;
+        transition: all .2s;
+      }
+
+      a:hover {
+        .c_blue;
+      }
+    }
+
+    .desc {
+      margin-bottom: 16px;
+      .fs12;
+      .c_normal;
+    }
+
+    .thumb {
+      display: block;
+      width: 160px;
+      height: 70px;
+      margin-bottom: 20px;
+
+      img {
+        display: block;
+        height: 100%;
+      }
+    }
+
+    .tags {
+      .fs12;
+      .c_light;
+
+      a {
+        .c_blue;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.zhongchuang-list-ft {
+  margin-top: -5px;
+}
+
+/* page: zhongchuang detail */
+.zhongchuang-detail {
+  padding-top: 50px;
+}
+
+.zhongchuang-detail-bd {
+  * {
+    line-height: 28px;
+    .c_normal;
+    .fs14;
+
+    margin-bottom: 15px;
+  }
+
+  .detail-logo {
+    width: 178px;
+    height: 178px;
+    margin: 0 28px 40px 0;
+    border: 1px solid #d9d9de;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .detail-title {
+    margin: 4px 0 12px 0;
+    .fs30;
+    .c_heavy;
+    .fn;
+  }
+
+  .detail-title-desc {
+    .fs24;
+    .c_light;
+    margin-bottom: 10px;
+  }
+
+}
+//  Created by sam mok (Siso brand interactive team.) 2015
+
+@import "base";
+
+/* page: zhongchuang */
+.zhongchuang {
+  background: #fff;
+}
+
+/* page: zhongchuang list */
+.zhongchuang-summary {
+  overflow: hidden;
+  height: 400px;
+  padding: 0;
+  position: relative;
+
+  .primary-img {
+    display: block;
+  }
+
+  .para {
+    position: absolute;
+    top: 234px;
+    left: 60px;
+    right: 60px;
+
+    line-height: 30px;
+    .c_normal;
+  }
+
+  .toggleSwitch {
+    position: absolute;
+    left: 0;
+    bottom: 4px;
+    width: 100%;
+  }
+
+  .toggle {
+    display: inline-block;
+    width: 48px;
+    height: 26px;
+    background: url("../images/zhongchuang-summary-btn-n.png") no-repeat;
+    cursor: pointer;
+  }
+}
+
+.zhongchuang-summary.active {
+  height: auto;
+
+  .toggleSwitch {
+    bottom: 9px;
   }
 
   .toggle {
