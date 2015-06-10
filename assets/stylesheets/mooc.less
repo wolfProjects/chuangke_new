@@ -50,6 +50,7 @@
   .lecturer{
     border: 1px solid #e7e7e7;
     padding-bottom: 31px;
+
     .lecturer-bd{
       padding-left: 51px;
       padding-top: 25px;
@@ -85,10 +86,17 @@
   .img-box{
     float: left;
     position: relative;
+    -webkit-transition: box-shadow .3s ease-in-out; /* Safari */
+    transition: box-shadow .3s ease-in-out;
+
+    a {
+      display: block;
+      height: 100%;
+      color: #fff;
+    }
+
     img{
       display: block;
-      -webkit-transition: width .5s ease-in-out; /* Safari */
-      transition: width .5s ease-in-out;
     }
     overflow: hidden;
 
@@ -101,8 +109,9 @@
     opacity: .5;
     height: 32px;
     width: 100%;
-    -webkit-transition: width 1s ease-in-out; /* Safari */
-    transition: width 1s ease-in-out;
+    -webkit-transition: opacity .3s ease-in-out; /* Safari */
+    transition: opacity .3s ease-in-out;
+    transition-delay: .1s;
   }
   .text-warp{
     position: absolute;
@@ -112,14 +121,12 @@
   }
   .img-box:hover {
     .text-bg{
-      opacity: 1;
+      opacity: 0.7;
     }
 
   }
   .img-box:hover{
-    img{
-      width: 110%!important;
-    }
+    box-shadow: 0 2px 5px #999;
   }
   .text{
     position: absolute;bottom: 0;
