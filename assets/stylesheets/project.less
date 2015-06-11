@@ -407,6 +407,20 @@
       }
     }
   }
+
+  .m-team-member {
+    .operate-remove {
+      display: block;
+    }
+  }
+
+  .m-entry-hd {
+    display: block;
+  }
+
+  .m-entry-bd {
+    display: none;
+  }
 }
 
 /* ----------------------------------------
@@ -418,6 +432,7 @@
 .logic-editor-bd {
   #cytoscape-wrap {
     height: 405px;
+    background: #f7f9fa;
   }
 
   #cytoscape-wrap:hover {
@@ -605,5 +620,120 @@
       background: url("../images/project-unit-list-selected.png") no-repeat center center;
       cursor: pointer;
     }
+  }
+}
+
+/* Page: project dynamic */
+.project-dynamic {
+ .project-introduceMember-bd {
+   padding-top: 110px;
+ }
+
+  .m-newly-updateTab {
+    margin-top: -65px;
+
+    .hd {
+      margin-bottom: 24px;
+    }
+  }
+}
+
+/* edit personal info */
+.editPersonalInfo {
+  .m-form {
+    margin-left: 91px;
+  }
+
+  .main {
+    width: 480px;
+  }
+
+  .form-control,
+  .form-textarea,
+  .form-textcount {
+    width: 478px;
+  }
+
+  .avatarUpload {
+    margin-bottom: 28px;
+
+    .label {
+      padding-top: 42px;
+    }
+
+    .main {
+      width: 480px;
+    }
+
+    .avatar-preview {
+      width: 100px;
+      height: 100px;
+      margin-right: 23px;
+      border: 1px solid #ccc;
+      background: url("../images/avatarUpload.png") no-repeat center center;
+    }
+
+    .avatar-upload {
+      padding: 20px 0 0 0;
+      p {
+        width: 100px;
+        text-align: center;
+        .c_light;
+        .fs12;
+      }
+
+      .btnWrap {
+        display: inline-block;
+        overflow: hidden;
+        width: 90px;
+        height: 30px;
+        margin-top: 14px;
+        position: relative;
+      }
+
+      .btnWrap:hover {
+        .btn {
+          background: #2abcff;
+        }
+      }
+
+      .avatarUploadFile {
+        font-size: 400px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        opacity: 0;
+        cursor: pointer;
+      }
+
+      .btn {
+        height: 30px;
+        line-height: 30px;
+        min-width: 90px;
+        cursor: pointer;
+      }
+
+    }
+
+    .loginName {
+      margin-top: 42px;
+      .c_normal;
+      .fs14;
+      font-weight: bolder;
+    }
+  }
+
+  .form-btn-submit {
+    width: 235px;
+  }
+
+  .form-btn-submit:hover {
+    background: #2abcff;
+  }
+
+  /* form validation */
+  .form-validation {
+    margin-top: 8px;
   }
 }

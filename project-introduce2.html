@@ -88,45 +88,26 @@
 <!-- end header -->
 
 <!-- page: project -->
-<!-- 编辑状态:
-        - 为 .project 挂一个 class: editing
--->
-<div class="project editing">
+<div class="project">
     <!-- project summary -->
     <div class="project-summary layout">
         <!-- summary -->
         <section class="summary">
             <div class="section-inner clearfix">
-                <!--form -->
-                <form action="">
-                    <div class="main fl">
-                        <input type="text" class="name" name="" id="" placeholder="输入项目名称"/>
-                        <textarea class="description" name="" id="" placeholder="输入项目简介"></textarea>
+                <div class="main fl">
+                    <strong class="project-status doing">
+                        <span>进行中</span>
+                        <a class="btn btn-gray favorite" href="">关注</a>
+                    </strong>
+                    <h1>在RAYEAGER PX2上搭建WEB服务器ANMPP</h1>
+                    <p class="desc">创客运动激发了普通大众的创造潜能。在互联网的推动下，开源和在线创造将获得更快更大范围拓展，加之技术创造的门槛业已降低，普通大众进行技术创造更为简单。这将会激发深植在人类本性之中的创造欲望。随着”人人</p>
+                    <p class="tags">类型:&nbsp;<a href="">Edison</a><a href="">Edison积木</a></p>
+                </div>
+                <div class="summary-picture fr">
+                    <div class="summary-picture-bd">
+                        <img src="assets/images/summary-picture01.jpg" alt="" width="576" height="340"/>
                     </div>
-                    <div class="summary-picture fr">
-                        <div class="uploadImg">
-                            <div class="uploadImg-before">
-                                <p class="tips">建议图片尺寸：450x270px<br/>文件不大于300k</p>
-                            </div>
-                            <div class="uploadImg-after">
-                                <img id="img" src="" alt="" width="450" height="270"/>
-                            </div>
-                        </div>
-                        <div class="text-center mt20">
-                            <div class="btnWrap">
-                                <input type="file" name="" id="" class="chooseFile"/>
-                                <span class="btn btn-primary">上传项目封面</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="clearfix"></div>
-                    <div class="mt20">
-                        <div class="btnWrap">
-                            <a class="btn btn-primary" style="width: 180px;">创建项目</a>
-                        </div>
-                    </div>
-                </form>
-                <!-- form -->
+                </div>
             </div>
         </section>
         <!-- end  summary -->
@@ -144,10 +125,6 @@
         <div class="logic-bd">
             <!-- tab body -->
             <div class="item logic-item-logic">
-                <div class="operateWrap">
-                    <span class="btn cancelChange hide mr5">取消更改</span>
-                    <span class="btn btn-primary changeLogic">更改项目逻辑</span>
-                </div>
                 <!-- component: m-logic-editor -->
                 <div class="logic-editor">
                     <div class="logic-editor-bd">
@@ -163,43 +140,10 @@
                                 <li class="type-item item03">服务&云</li>
                             </ul>
                         </div>
-
-                        <!-- node editor -->
-                        <div id="cytoscape-editor">
-                            <div class="operator-btn">
-                                <button class="cytoscape-btn" id="modifyNode">修改节点的文本</button>
-                                <button class="cytoscape-btn" id="removeNode">移除选中节点</button>
-                                <div class="operator-wrap">
-                                    <h5>创建节点</h5>
-                                    <label for="">节点类型:</label>
-                                    <select id="add_type">
-                                        <option value="no">请选择节点类型</option>
-                                        <option value="app" selected>app</option>
-                                        <option value="action">action</option>
-                                        <option value="service">service</option>
-                                    </select>
-                                    &nbsp;&nbsp;
-                                    <label for="">节点的描述文本:</label>
-                                    &nbsp;
-                                    <input type="text" placeholder="请填写描述文本.." id="add_description"/>
-                                    <p>
-                                        <button class="btn btn-primary" id="add_btn">添加节点</button>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- end node editor -->
                     </div>
                 </div>
             </div>
             <div class="item logic-item-unit">
-                <div class="operateWrap">
-                    <span class="btn btn-primary changeUnit fr">更改项目套件</span>
-                    <select class="unitSelect fr mr15" name="" id="">
-                        <option value="">主板</option>
-                        <option value="">CPU</option>
-                    </select>
-                </div>
                 <!-- list -->
                 <div class="project-unit-list">
                     <div class="listWrap">
@@ -332,32 +276,10 @@
     <!-- end logic -->
 
     <!-- project introduce-member -->
-    <div class="project-introduceMember layout editing">
+    <div class="project-introduceMember layout">
         <div class="project-introduceMember-bd clearfix">
             <main class="main">
-                <!-- component: comment -->
-                <div class="m-comment">
-                    <form action="">
-                        <div class="m-comment-hd">
-                            <input class="m-comment-title" type="text" name="" id="" placeholder="输入更新标题"/>
-                        </div>
-                        <div class="m-comment-bd mt10">
-                            <!-- html editor -->
-                            <div class="redactor-main"></div>
-                            <!-- end html editor -->
-                            <div class="m-upload-file mt10">
-                                <input class="file" type="file" name="" id="">
-                                <span class="btn btn-primary btn-xm ml5">上传图片</span>
-                            </div>
-                        </div>
-                        <div class="m-comment-ft text-center mt10">
-                            <button type="submit" class="btn btn-primary" href="">发布</button>
-                        </div>
-                    </form>
-                </div>
-                <!-- end comment -->
-
-                <div class="mt40">
+                <div class="mt5">
                     <!-- component: newly-update -->
                     <div class="m-newly-update m-project-newly">
                         <div class="hd">最新更新</div>
@@ -439,8 +361,23 @@
                 </div>
             </main>
             <aside class="side">
+                <!-- component: article -->
+                <div class="m-article mt10">
+                    <div class="m-article-hd">
+                        <img src="assets/images/tool-icon.png" class="icon">
+                        <h4>项目套件</h4>
+                        <a class="more fr">更多 > </a>
+                    </div>
+                    <ul class="m-article-bd">
+                        <li class="text">Liunx 开发源代码代码代码</li>
+                        <li class="text">Liunx 开发源代码</li>
+                        <li class="text">Liunx 开发源代码</li>
+                    </ul>
+                </div>
+                <!-- end article -->
+
                 <!-- component: team-member -->
-                <div class="m-team-member">
+                <div class="m-team-member mt10">
                     <div class="m-sidebar-hd m-team-member-hd">
                         <img src="assets/images/people-icon.png" class="icon">
                         <h4>团队成员</h4>
@@ -450,7 +387,6 @@
                             <ul class="list clearfix">
                                 <!-- item -->
                                 <li class="item">
-                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info" style="display: none;">
@@ -475,7 +411,6 @@
                                 <!-- end item -->
                                 <!-- item -->
                                 <li class="item">
-                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info" style="display: none;">
@@ -500,57 +435,6 @@
                                 <!-- end item -->
                                 <!-- item -->
                                 <li class="item">
-                                    <i class="operate-remove"></i>
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info" style="display: none;">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                                <!-- item -->
-                                <li class="item">
-                                    <i class="operate-remove"></i>
-                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
-                                    <p class="thumb-name">张学进</p>
-                                    <div class="info" style="display: none;">
-                                        <div class="info-bd">
-                                            <div class="clearfix">
-                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
-                                                <dl class="fl">
-                                                    <dt><a href="">张学进</a></dt>
-                                                    <dd>项目发起人</dd>
-                                                </dl>
-                                            </div>
-                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
-                                        </div>
-                                        <div class="info-ft">
-                                            <a class="btn" href="">移除</a>
-                                        </div>
-
-                                        <i class="arrow"></i>
-                                        <i class="close"></i>
-                                    </div>
-                                </li>
-                                <!-- end item -->
-                                <!-- item -->
-                                <li class="item">
-                                    <i class="operate-remove"></i>
                                     <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
                                     <p class="thumb-name">张学进</p>
                                     <div class="info" style="display: none;">
@@ -579,37 +463,75 @@
                 </div>
                 <!-- end team member -->
 
-                <!-- component: invite -->
-                <div class="m-invite mt10">
-                    <div class="m-invite-hd m-sidebar-hd">
-                        <img src="assets/images/invite-icon.png" class="icon">
-                        <h4>邀请新队员</h4>
+                <!-- component: article -->
+                <div class="m-article mt10">
+                    <div class="m-article-hd">
+                        <img src="assets/images/calendar-icon.png" class="icon">
+                        <h4>参与活动</h4>
                     </div>
-                    <div class="m-invite-bd">
-                        <div class="pr">
-                            <input class="text " placeholder="输入用户名或邮箱地址" type="text">
-                            <a class="invite-btn" href="#">邀请</a>
-                        </div>
-                    </div>
+                    <ul class="m-article-bd">
+                        <li class="clearfix ">
+                            <img src="assets/images/MC_7.jpg" class="fl article-img">
+                            <div class="text-box fl">
+                                <dl>
+                                    <dt>创客学院5月分享会分享分享</dt>
+                                    <dd>2015年5月27日</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <!-- end invite -->
+                <!-- end article -->
+
+                <!-- component: article -->
+                <div class="m-article mt10">
+                    <div class="m-article-hd">
+                        <img src="assets/images/course-icon.png" class="icon">
+                        <h4>相关公开课</h4>
+                        <a class="more fr">更多 > </a>
+                    </div>
+                    <ul class="m-article-bd">
+                        <li class="clearfix ">
+                            <img src="assets/images/MC_7.jpg" class="fl article-img">
+                            <div class="text-box fl">
+                                <dl>
+                                    <dt>创客学院5月分享</dt>
+                                    <dd>2015年5月27日</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix ">
+                            <img src="assets/images/MC_7.jpg" class="fl article-img">
+                            <div class="text-box fl">
+                                <dl>
+                                    <dt>创客学院5月分享会分享分享</dt>
+                                    <dd>2015年5月27日</dd>
+                                </dl>
+                            </div>
+                        </li>
+                        <li class="clearfix ">
+                            <img src="assets/images/MC_7.jpg" class="fl article-img">
+                            <div class="text-box fl">
+                                <dl>
+                                    <dt>创客学院5月分享会分享分享</dt>
+                                    <dd>2015年5月27日</dd>
+                                </dl>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- end article -->
 
                 <!-- component: entry -->
                 <div class="m-entry mt10">
-                    <div class="m-sidebar-hd m-entry-hd">
-                        <img src="assets/images/worktile-icon.png" class="icon">
-                        <h4>worktile平台地址</h4>
-                        <div class="address-wrap">
-                            <input class="address" type="text" name="" id="" placeholder="http://www.worktile.com*****"/>
-                        </div>
-                    </div>
                     <div class="m-entry-bd">
-                        <a class="show" href=""><img src="assets/images/node-link.jpg" alt=""/></a>
+                        <a class="show" href=""><img src="assets/images/worktile.jpg" alt=""/></a>
                     </div>
                 </div>
                 <!-- end entry -->
             </aside>
         </div>
+
     </div>
     <!-- end project introduce-member -->
 </div>

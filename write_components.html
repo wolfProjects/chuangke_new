@@ -51,9 +51,7 @@
             <!-- end search -->
 
             <!-- component: selector -->
-
              <div class="m-selector mt10">
-
                  <div class="item">
                     <div class="item-hd">
                         <img src="assets/images/time-icon.png" class="icon">
@@ -86,6 +84,21 @@
              </div>
             <!-- end selector -->
 
+            <!-- component: invite -->
+            <div class="m-invite">
+                <div class="m-invite-hd m-sidebar-hd">
+                    <img src="assets/images/invite-icon.png" class="icon">
+                    <h4>邀请新队员</h4>
+                </div>
+                <div class="m-invite-bd">
+                    <div class="pr">
+                        <input class="text " placeholder="输入用户名或邮箱地址" type="text">
+                        <a class="invite-btn" href="#">邀请</a>
+                    </div>
+                </div>
+            </div>
+            <!-- end invite -->
+
 
             <!-- component: panel -->
             <div class="m-panel mt10">
@@ -104,7 +117,6 @@
         <!-- component: selector -->
 
         <div class="m-selector mt10">
-
             <div class="item">
                 <div class="item-hd">
                     <img src="assets/images/time-icon.png" class="icon">
@@ -130,7 +142,7 @@
                 <a class="more fr">更多 > </a>
             </div>
             <ul class="m-article-bd">
-                <li class="text">Liunx 开发源代码代码代码代码代码代码代码代码</li>
+                <li class="text">Liunx 开发源代码代码代码</li>
                 <li class="text">Liunx 开发源代码</li>
                 <li class="text">Liunx 开发源代码</li>
                 <a class="m-btn-blue mt25" href="#">在线申请</a>
@@ -178,7 +190,6 @@
         <!-- end article -->
 
         <!-- component: map -->
-
         <div class="m-map mt10">
             <div class="m-sidebar-hd m-map-hd">
                 <img src="assets/images/address-icon.png" class="icon">
@@ -198,12 +209,227 @@
                 <a class="all-time fr">所有日期活动</a>
                 <p>2015年5月28日    19:00~21:00   </p>
             </div>
-
-
         </div>
         <!-- end calendar -->
 
+        <!-- component: book -->
+        <div class="m-book mt10">
+            <div class="m-book-hd">
+                <h2>报名中</h2><i class="splite"></i><p>报名时间<br/><small>2015.05.01--2015.05.15</small></p>
+            </div>
+            <div class="m-book-bd mt10 clearfix">
+                <a class="m-btn-white fl" href="#">报名参与</a>
+                <a class="m-btn-white fr" href="#">关注</a>
+            </div>
+        </div>
+        <!-- end book -->
 
+        <!-- component: contact -->
+        <div class="m-contact mt10">
+            <div class="m-sidebar-hd">
+                <img src="assets/images/tele-icon.png" class="icon">
+                <h4>联系方式</h4>
+            </div>
+
+            <div class="m-contact-bd">
+                <p>网站：xinchejian.com</p>
+                <p>邮件：info@xinchejian.com</p>
+                <p>QQ群：26085021</p>
+                <p>微信群：xinchejian</p>
+                <p>关注我们：</p>
+                <p>Facebook，Weibo，Twitter，Douban</p>
+            </div>
+        </div>
+        <!-- end contact -->
+
+        <!-- component: entry -->
+        <div class="m-entry mt10">
+            <div class="m-entry-bd">
+                <a class="show" href=""><img src="assets/images/node-link.jpg" alt=""/></a>
+            </div>
+        </div>
+        <!-- end entry -->
+
+
+        <style>
+            /*项目管理页面下的entry模块样式*/
+            .project.editing .m-entry-hd {
+                display: block;
+            }
+
+            .project.editing .m-entry-bd {
+                display: none;
+            }
+        </style>
+        <div class="project editing">
+            <!-- component: entry -->
+            <div class="m-entry mt10">
+                <div class="m-sidebar-hd m-entry-hd">
+                    <img src="assets/images/worktile-icon.png" class="icon">
+                    <h4>worktile平台地址</h4>
+                    <div class="address-wrap">
+                        <input class="address" type="text" name="" id="" placeholder="http://www.worktile.com*****"/>
+                    </div>
+                </div>
+                <div class="m-entry-bd">
+                    <a class="show" href=""><img src="assets/images/node-link.jpg" alt=""/></a>
+                </div>
+            </div>
+            <!-- end entry -->
+        </div>
+
+        <!-- component: lecturer -->
+        <div class="m-lecturer">
+            <div class="m-sidebar-hd m-lecturer-hd">
+                <img src="assets/images/lecturer-icon.png" class="icon">
+                <h4>课堂讲师</h4>
+            </div>
+            <div class="m-lecturer-bd clearfix">
+                <img src="assets/images/lecturer-top.png" class="fl" >
+                <div class="m-lecturer-info fl">
+                    <dl>
+                        <dt>李洪刚</dt>
+                        <dd>创客大爆炸创始人</dd>
+                    </dl>
+                </div>
+            </div>
+        </div>
+        <!-- end lecturer -->
+
+        <!-- component: team-member -->
+        <div class="m-team-member mt10">
+            <div class="m-sidebar-hd m-team-member-hd">
+                <img src="assets/images/people-icon.png" class="icon">
+                <h4>团队成员</h4>
+            </div>
+            <div class="m-team-member-bd">
+                <div class="listWrap">
+                    <ul class="list clearfix">
+                        <!-- item -->
+                        <li class="item">
+                            <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                            <p class="thumb-name">张学进</p>
+                            <div class="info" style="display: none;">
+                                <div class="info-bd">
+                                    <div class="clearfix">
+                                        <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                        <dl class="fl">
+                                            <dt><a href="">张学进</a></dt>
+                                            <dd>项目发起人</dd>
+                                        </dl>
+                                    </div>
+                                    <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                </div>
+                                <div class="info-ft">
+                                    <a class="btn" href="">移除</a>
+                                </div>
+
+                                <i class="arrow"></i>
+                                <i class="close"></i>
+                            </div>
+                        </li>
+                        <!-- end item -->
+                        <!-- item -->
+                        <li class="item">
+                            <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                            <p class="thumb-name">张学进</p>
+                            <div class="info" style="display: none;">
+                                <div class="info-bd">
+                                    <div class="clearfix">
+                                        <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                        <dl class="fl">
+                                            <dt><a href="">张学进</a></dt>
+                                            <dd>项目发起人</dd>
+                                        </dl>
+                                    </div>
+                                    <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                </div>
+                                <div class="info-ft">
+                                    <a class="btn" href="">移除</a>
+                                </div>
+
+                                <i class="arrow"></i>
+                                <i class="close"></i>
+                            </div>
+                        </li>
+                        <!-- end item -->
+                        <!-- item -->
+                        <li class="item">
+                            <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                            <p class="thumb-name">张学进</p>
+                            <div class="info" style="display: none;">
+                                <div class="info-bd">
+                                    <div class="clearfix">
+                                        <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                        <dl class="fl">
+                                            <dt><a href="">张学进</a></dt>
+                                            <dd>项目发起人</dd>
+                                        </dl>
+                                    </div>
+                                    <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                </div>
+                                <div class="info-ft">
+                                    <a class="btn" href="">移除</a>
+                                </div>
+
+                                <i class="arrow"></i>
+                                <i class="close"></i>
+                            </div>
+                        </li>
+                        <!-- end item -->
+                        <!-- item -->
+                        <li class="item">
+                            <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                            <p class="thumb-name">张学进</p>
+                            <div class="info" style="display: none;">
+                                <div class="info-bd">
+                                    <div class="clearfix">
+                                        <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                        <dl class="fl">
+                                            <dt><a href="">张学进</a></dt>
+                                            <dd>项目发起人</dd>
+                                        </dl>
+                                    </div>
+                                    <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                </div>
+                                <div class="info-ft">
+                                    <a class="btn" href="">移除</a>
+                                </div>
+
+                                <i class="arrow"></i>
+                                <i class="close"></i>
+                            </div>
+                        </li>
+                        <!-- end item -->
+                        <!-- item -->
+                        <li class="item">
+                            <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                            <p class="thumb-name">张学进</p>
+                            <div class="info" style="display: none;">
+                                <div class="info-bd">
+                                    <div class="clearfix">
+                                        <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                        <dl class="fl">
+                                            <dt><a href="">张学进</a></dt>
+                                            <dd>项目发起人</dd>
+                                        </dl>
+                                    </div>
+                                    <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                </div>
+                                <div class="info-ft">
+                                    <a class="btn" href="">移除</a>
+                                </div>
+
+                                <i class="arrow"></i>
+                                <i class="close"></i>
+                            </div>
+                        </li>
+                        <!-- end item -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end team member -->
         <!--  end components write here -->
     </aside>
 </div>
