@@ -256,7 +256,7 @@
          */
         locale: {
           daysMin: ["日", "一", "二", "三", "四", "五", "六"],
-          months: ["1月", "2月", "3月", "4月", "5月", "6月", "7月", "8月", "9月", "10月", "11月", "12月"],
+          months: ["一月", "二月", "三月", "四月", "五月", "六月", "七月", "八月", "九月", "十月", "十一月", "十二月"],
           monthsShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
         },
         /**
@@ -998,6 +998,7 @@
   });
 
   tmpl = function tmpl(str, data){
+    console.log(data)
     // Figure out if we're getting a template, or if we need to
     // load the template - and be sure to cache the result.
     var fn = !/\W/.test(str) ?

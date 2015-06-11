@@ -2,16 +2,18 @@
 
 var components = {
     datepicker: function(){
-        /* simple inline calendar */
-        var dime = "2015/6/13";
-        var dime1 = "2015/6/10";
-        var dime2 = "2015/6/1";
+
+        /* 这个timeData是你要传入的time arr，就是标记的活动日期,可以是多个也可以是单个*/
+        var timeData = [ " 2015/6/11" , "2015/6/3" , "2015/6/4" , "2015/6/7 " ];
+
         $('#m-calendar-box').DatePicker({
             mode: 'multiple',
             inline: true,
             calendars: 1,
-            date: [dime, dime1 ,dime2],
+            date: timeData,
             onChange: function(data) {
+                /* onChange method ：用户 onClick calendar  */
+                /* data 就是你传入的 Arr , method : getDate , getMonth , getFullYear*/
                 for(var i=0; i < data.length; i++){
                     console.log(data[i].getDate());
                 }
