@@ -321,8 +321,8 @@ var project = {
         }
     },
     initUi: function (){
-        this.component.editUnit();
         this.component.comment();
+        this.component.editUnit();
         this.component.logicTab();
         this.component.editLogicUnit();
 

@@ -5,7 +5,11 @@
 var app = {
     components: {
         kv: function(){
-            jQuery(".m-kv").slide({titCell: '.m-kv-head ul', mainCell:".m-kv-body ul", delayTime: 450, effect:'left', autoPlay:true, autoPage: '<li></li>'});
+            try {
+                jQuery(".m-kv").slide({titCell: '.m-kv-head ul', mainCell:".m-kv-body ul", delayTime: 450, effect:'left', autoPlay:true, autoPage: '<li></li>'});
+            } catch(err) {
+
+            }
         },
 
         headerFloatPanel: {
@@ -151,6 +155,28 @@ var app = {
                     }
                 });
             }
+        },
+
+        teamMember: function (){
+            var timer = null;
+
+            // show panel
+            $('.m-team-member-bd .item').mouseover(function (){
+                clearTimeout(timer);
+                $(this).find('.info').show();
+                $(this).siblings('.item').find('.info').hide();
+            })
+                .mouseout(function (){
+                    var panel = $(this).find('.info');
+                    timer = setTimeout(function (){
+                        panel.hide();
+                    }, 250);
+                });
+
+            // close panel
+            $('.m-team-member-bd .item .info .close').click(function (){
+                $(this).parent('.info').hide();
+            });
         }
     },
     initApp: function (){
@@ -159,6 +185,8 @@ var app = {
         this.components.formValidation.init();
         this.components.floatPanel.init();
         this.components.log.init();
+        this.components.teamMember();
+
 
         // log & registration
         $('.header-logInBtn').click(function (){

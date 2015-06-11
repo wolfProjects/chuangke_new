@@ -964,11 +964,21 @@ button {
 .project.editing .summary .uploadImg-after img {
   vertical-align: top;
 }
+.project.editing .m-team-member .operate-remove {
+  display: block;
+}
+.project.editing .m-entry-hd {
+  display: block;
+}
+.project.editing .m-entry-bd {
+  display: none;
+}
 /* ----------------------------------------
  * m-logic-editor
  * ---------------------------------------- */
 .logic-editor-bd #cytoscape-wrap {
   height: 405px;
+  background: #f7f9fa;
 }
 .logic-editor-bd #cytoscape-wrap:hover {
   outline: 1px dashed #1aa9eb;
@@ -1130,4 +1140,95 @@ button {
   height: 100%;
   background: url("../images/project-unit-list-selected.png") no-repeat center center;
   cursor: pointer;
+}
+/* Page: project dynamic */
+.project-dynamic .project-introduceMember-bd {
+  padding-top: 110px;
+}
+.project-dynamic .m-newly-updateTab {
+  margin-top: -65px;
+}
+.project-dynamic .m-newly-updateTab .hd {
+  margin-bottom: 24px;
+}
+/* edit personal info */
+.editPersonalInfo {
+  /* form validation */
+}
+.editPersonalInfo .m-form {
+  margin-left: 91px;
+}
+.editPersonalInfo .main {
+  width: 480px;
+}
+.editPersonalInfo .form-control,
+.editPersonalInfo .form-textarea,
+.editPersonalInfo .form-textcount {
+  width: 478px;
+}
+.editPersonalInfo .avatarUpload {
+  margin-bottom: 28px;
+}
+.editPersonalInfo .avatarUpload .label {
+  padding-top: 42px;
+}
+.editPersonalInfo .avatarUpload .main {
+  width: 480px;
+}
+.editPersonalInfo .avatarUpload .avatar-preview {
+  width: 100px;
+  height: 100px;
+  margin-right: 23px;
+  border: 1px solid #ccc;
+  background: url("../images/avatarUpload.png") no-repeat center center;
+}
+.editPersonalInfo .avatarUpload .avatar-upload {
+  padding: 20px 0 0 0;
+}
+.editPersonalInfo .avatarUpload .avatar-upload p {
+  width: 100px;
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .btnWrap {
+  display: inline-block;
+  overflow: hidden;
+  width: 90px;
+  height: 30px;
+  margin-top: 14px;
+  position: relative;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .btnWrap:hover .btn {
+  background: #2abcff;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .avatarUploadFile {
+  font-size: 400px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  opacity: 0;
+  cursor: pointer;
+}
+.editPersonalInfo .avatarUpload .avatar-upload .btn {
+  height: 30px;
+  line-height: 30px;
+  min-width: 90px;
+  cursor: pointer;
+}
+.editPersonalInfo .avatarUpload .loginName {
+  margin-top: 42px;
+  color: #666;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.editPersonalInfo .form-btn-submit {
+  width: 235px;
+}
+.editPersonalInfo .form-btn-submit:hover {
+  background: #2abcff;
+}
+.editPersonalInfo .form-validation {
+  margin-top: 8px;
 }

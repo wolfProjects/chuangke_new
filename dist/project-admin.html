@@ -88,6 +88,9 @@
 <!-- end header -->
 
 <!-- page: project -->
+<!-- 编辑状态:
+        - 为 .project 挂一个 class: editing
+-->
 <div class="project editing">
     <!-- project summary -->
     <div class="project-summary layout">
@@ -329,7 +332,7 @@
     <!-- end logic -->
 
     <!-- project introduce-member -->
-    <div class="project-introduceMember layout">
+    <div class="project-introduceMember layout editing">
         <div class="project-introduceMember-bd clearfix">
             <main class="main">
                 <!-- component: comment -->
@@ -436,50 +439,177 @@
                 </div>
             </main>
             <aside class="side">
-                <!-- component: search -->
-                <div class="m-search">
-                    <input class="search-input " placeholder="请输入关键字" type="text">
-                    <a class="search-btn" href="#">搜索</a>
-                </div>
-                <!-- end search -->
-
-                <!-- component: selector -->
-                <div class="m-selector mt10">
-
-                    <div class="item">
-                        <div class="item-hd">
-                            <img src="assets/images/time-icon.png" class="icon">
-                            <h4>活动状态</h4>
-                        </div>
-                        <ul class="item-bd  clearfix">
-                            <li><a href="#" class="active">全部</a></li>
-                            <li><a href="#">未开始</a></li>
-                            <li><a href="#">进行中</a></li>
-                            <li><a href="#">已结束</a></li>
-                        </ul>
+                <!-- component: team-member -->
+                <div class="m-team-member">
+                    <div class="m-sidebar-hd m-team-member-hd">
+                        <img src="assets/images/people-icon.png" class="icon">
+                        <h4>团队成员</h4>
                     </div>
+                    <div class="m-team-member-bd">
+                        <div class="listWrap">
+                            <ul class="list clearfix">
+                                <!-- item -->
+                                <li class="item">
+                                    <i class="operate-remove"></i>
+                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                    <p class="thumb-name">张学进</p>
+                                    <div class="info" style="display: none;">
+                                        <div class="info-bd">
+                                            <div class="clearfix">
+                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                                <dl class="fl">
+                                                    <dt><a href="">张学进</a></dt>
+                                                    <dd>项目发起人</dd>
+                                                </dl>
+                                            </div>
+                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                        </div>
+                                        <div class="info-ft">
+                                            <a class="btn" href="">移除</a>
+                                        </div>
 
-                    <div class="item">
-                        <div class="item-hd">
-                            <img src="assets/images/address-icon.png" class="icon">
-                            <h4>地址</h4>
+                                        <i class="arrow"></i>
+                                        <i class="close"></i>
+                                    </div>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="item">
+                                    <i class="operate-remove"></i>
+                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                    <p class="thumb-name">张学进</p>
+                                    <div class="info" style="display: none;">
+                                        <div class="info-bd">
+                                            <div class="clearfix">
+                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                                <dl class="fl">
+                                                    <dt><a href="">张学进</a></dt>
+                                                    <dd>项目发起人</dd>
+                                                </dl>
+                                            </div>
+                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                        </div>
+                                        <div class="info-ft">
+                                            <a class="btn" href="">移除</a>
+                                        </div>
+
+                                        <i class="arrow"></i>
+                                        <i class="close"></i>
+                                    </div>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="item">
+                                    <i class="operate-remove"></i>
+                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                    <p class="thumb-name">张学进</p>
+                                    <div class="info" style="display: none;">
+                                        <div class="info-bd">
+                                            <div class="clearfix">
+                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                                <dl class="fl">
+                                                    <dt><a href="">张学进</a></dt>
+                                                    <dd>项目发起人</dd>
+                                                </dl>
+                                            </div>
+                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                        </div>
+                                        <div class="info-ft">
+                                            <a class="btn" href="">移除</a>
+                                        </div>
+
+                                        <i class="arrow"></i>
+                                        <i class="close"></i>
+                                    </div>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="item">
+                                    <i class="operate-remove"></i>
+                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                    <p class="thumb-name">张学进</p>
+                                    <div class="info" style="display: none;">
+                                        <div class="info-bd">
+                                            <div class="clearfix">
+                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                                <dl class="fl">
+                                                    <dt><a href="">张学进</a></dt>
+                                                    <dd>项目发起人</dd>
+                                                </dl>
+                                            </div>
+                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                        </div>
+                                        <div class="info-ft">
+                                            <a class="btn" href="">移除</a>
+                                        </div>
+
+                                        <i class="arrow"></i>
+                                        <i class="close"></i>
+                                    </div>
+                                </li>
+                                <!-- end item -->
+                                <!-- item -->
+                                <li class="item">
+                                    <i class="operate-remove"></i>
+                                    <a class="thumb" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                    <p class="thumb-name">张学进</p>
+                                    <div class="info" style="display: none;">
+                                        <div class="info-bd">
+                                            <div class="clearfix">
+                                                <a class="avatar fl" href=""><img src="assets/images/project-team-member01.jpg" alt="" width="68" height="68"></a>
+                                                <dl class="fl">
+                                                    <dt><a href="">张学进</a></dt>
+                                                    <dd>项目发起人</dd>
+                                                </dl>
+                                            </div>
+                                            <p class="desc">个人说明，没有个人说明没有个人说明没有个人</p>
+                                        </div>
+                                        <div class="info-ft">
+                                            <a class="btn" href="">移除</a>
+                                        </div>
+
+                                        <i class="arrow"></i>
+                                        <i class="close"></i>
+                                    </div>
+                                </li>
+                                <!-- end item -->
+                            </ul>
                         </div>
-                        <ul class="item-bd clearfix">
-                            <li><a href="#" class="active">地址</a></li>
-                            <li><a href="#">上海</a></li>
-                            <li><a href="#">北京</a></li>
-                            <li><a href="#">广州</a></li>
-                            <li><a href="#">广州</a></li>
-                            <li><a href="#">广州</a></li>
-                            <li><a href="#">广州</a></li>
-                        </ul>
                     </div>
-
                 </div>
-                <!-- end selector -->
+                <!-- end team member -->
+
+                <!-- component: invite -->
+                <div class="m-invite mt10">
+                    <div class="m-invite-hd m-sidebar-hd">
+                        <img src="assets/images/invite-icon.png" class="icon">
+                        <h4>邀请新队员</h4>
+                    </div>
+                    <div class="m-invite-bd">
+                        <div class="pr">
+                            <input class="text " placeholder="输入用户名或邮箱地址" type="text">
+                            <a class="invite-btn" href="#">邀请</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- end invite -->
+
+                <!-- component: entry -->
+                <div class="m-entry mt10">
+                    <div class="m-sidebar-hd m-entry-hd">
+                        <img src="assets/images/worktile-icon.png" class="icon">
+                        <h4>worktile平台地址</h4>
+                        <div class="address-wrap">
+                            <input class="address" type="text" name="" id="" placeholder="http://www.worktile.com*****"/>
+                        </div>
+                    </div>
+                    <div class="m-entry-bd">
+                        <a class="show" href=""><img src="assets/images/node-link.jpg" alt=""/></a>
+                    </div>
+                </div>
+                <!-- end entry -->
             </aside>
         </div>
-
     </div>
     <!-- end project introduce-member -->
 </div>

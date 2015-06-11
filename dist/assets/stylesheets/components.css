@@ -1168,9 +1168,10 @@ button {
   font-weight: normal;
 }
 .m-selector .item-bd {
+  width: 300px;
   padding-left: 26px;
-  width: 284px;
   padding-bottom: 11px;
+  margin-top: 5px;
 }
 .m-selector .item-bd li {
   display: block;
@@ -1431,6 +1432,21 @@ button {
 .m-newly-update .author .editor-group .icon-trash:hover {
   background: url("../images/icon-trash-h.png") no-repeat center center;
 }
+.m-newly-updateTab .hd .tab .item {
+  float: left;
+  padding-right: 31px;
+  margin-right: 30px;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  background: url("../images/m-newly-split.png") no-repeat right center;
+}
+.m-newly-updateTab .hd .tab .item:last-child {
+  background: none;
+}
+.m-newly-updateTab .hd .tab .active {
+  color: #1aa9eb;
+}
 .m-project-newly .bd li {
   margin-bottom: 40px;
 }
@@ -1494,6 +1510,329 @@ button {
   line-height: 25px;
   padding: 0 15px;
   font-size: 14px;
+}
+/* ----------------------------------------
+ * m-book
+ * ---------------------------------------- */
+.m-book {
+  padding: 25px;
+  background: #14a0e1;
+}
+.m-book-hd {
+  text-align: center;
+  color: #fff;
+}
+.m-book-hd h2 {
+  display: inline-block;
+  font-size: 34px;
+  vertical-align: middle;
+}
+.m-book-hd p {
+  font-size: 14px;
+  display: inline-block;
+  line-height: 22px;
+  vertical-align: middle;
+}
+.m-book-hd .splite {
+  display: inline-block;
+  width: 1px;
+  height: 35px;
+  margin: 0 25px;
+  vertical-align: middle;
+  background: #fff;
+  opacity: .4;
+}
+.m-book-bd .m-btn-white {
+  font-size: 20px;
+  width: 140px;
+  height: 53px;
+  line-height: 53px;
+  border-radius: 2px;
+  padding-bottom: 46px;
+}
+/* ----------------------------------------
+ * m-contact
+ * ---------------------------------------- */
+.m-contact {
+  background: #fefefe;
+  border: 1px solid #e7e7e7;
+}
+.m-contact-bd {
+  padding: 14px 52px;
+}
+.m-contact-bd p {
+  line-height: 28px;
+  font-size: 16px;
+  color: #666;
+}
+/* ----------------------------------------
+ * m-contact
+ * ---------------------------------------- */
+.m-entry {
+  border: 1px solid #e7e7e7;
+}
+.m-entry-hd {
+  display: none;
+  padding: 24px 20px 30px 20px;
+}
+.m-entry-hd .address-wrap {
+  position: relative;
+  margin: 12px 35px 0 35px;
+}
+.m-entry-hd .address {
+  display: block;
+  width: 100%;
+  height: 38px;
+  line-height: 18px;
+  padding: 10px;
+  font-size: 14px;
+  color: #999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #e7e7e7;
+}
+.m-entry-bd {
+  width: 345px;
+  height: 62px;
+}
+.m-entry-bd img {
+  display: block;
+  height: 100%;
+}
+/* ----------------------------------------
+ * m-team-member
+ * ---------------------------------------- */
+.m-team-member {
+  border: 1px solid #e7e7e7;
+}
+.m-team-member-bd {
+  padding: 24px 0 5px 0;
+  /* member operate */
+}
+.m-team-member-bd .listWrap {
+  margin: 0 50px;
+}
+.m-team-member-bd .item {
+  float: left;
+  margin: 0 7px 17px 7px;
+  position: relative;
+}
+.m-team-member-bd .item:nth-child(3n) {
+  margin-right: 0;
+}
+.m-team-member-bd .thumb {
+  display: block;
+  width: 68px;
+  height: 68px;
+  border-radius: 68px;
+  overflow: hidden;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.m-team-member-bd .thumb:hover {
+  opacity: .85;
+}
+.m-team-member-bd .thumb:hover .info {
+  display: block;
+}
+.m-team-member-bd .thumb-name {
+  padding: 14px 0 8px 0;
+  text-align: center;
+  font-size: 14px;
+  color: #333;
+}
+.m-team-member-bd .m-team-member-add {
+  display: block;
+  width: 80px;
+  height: 80px;
+  background: url("../images/project-team-member-add.png") no-repeat;
+  cursor: pointer;
+}
+.m-team-member-bd .m-team-member-add:active {
+  position: relative;
+  top: 1px;
+}
+.m-team-member-bd .info {
+  display: none;
+  position: absolute;
+  right: 74px;
+  top: 25px;
+  z-index: 100;
+  width: 302px;
+  background: #fff;
+  border: 1px solid #efefef;
+}
+.m-team-member-bd .info-bd {
+  padding: 20px 20px 9px 20px;
+}
+.m-team-member-bd .info-bd .avatar img:hover {
+  opacity: .85;
+}
+.m-team-member-bd .info-bd dl {
+  padding-top: 22px;
+  margin: 0 0 3px 15px;
+}
+.m-team-member-bd .info-bd dl dt {
+  font-size: 16px;
+  color: #333;
+}
+.m-team-member-bd .info-bd dl dd {
+  font-size: 12px;
+  color: #999;
+}
+.m-team-member-bd .info-bd dl a {
+  color: #333;
+}
+.m-team-member-bd .info-bd .desc {
+  font-size: 12px;
+  color: #666;
+}
+.m-team-member-bd .info-ft {
+  border-top: 1px solid #efefef;
+  padding: 10px 0;
+  text-align: center;
+  background: #fcfcfc;
+}
+.m-team-member-bd .info-ft .btn {
+  display: inline-block;
+  line-height: 32px;
+  padding: 0 30px;
+  color: #666;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #efefef;
+}
+.m-team-member-bd .info-ft .btn:hover {
+  color: #fff;
+  background: #2abcff;
+}
+.m-team-member-bd .arrow {
+  width: 7px;
+  height: 15px;
+  background: url("../images/project-team-member-info-arror.png") no-repeat;
+  position: absolute;
+  top: 34px;
+  right: -7px;
+}
+.m-team-member-bd .close {
+  width: 12px;
+  height: 12px;
+  background: url("../images/project-team-member-close.png") no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+.m-team-member-bd .operate-remove {
+  display: none;
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  z-index: 10;
+  width: 24px;
+  height: 24px;
+  background: url("../images/icon-remove.png") no-repeat center center;
+  cursor: pointer;
+}
+.m-team-member-bd .operate-remove:active {
+  top: 1px;
+}
+/* ----------------------------------------
+ * m-invite
+ * ---------------------------------------- */
+.m-invite {
+  border: 1px solid #e7e7e7;
+}
+.m-invite .m-invite-bd {
+  position: relative;
+  padding: 12px 0 30px 0;
+  margin: 0 55px;
+}
+.m-invite .text {
+  display: block;
+  width: 100%;
+  height: 40px;
+  line-height: 20px;
+  padding: 10px 0;
+  margin: 0 60px 0 0;
+  border: 1px solid #e7e7e7;
+  border-right: none;
+  color: #a0a0a0;
+  font-size: 14px;
+  text-indent: 10px;
+}
+.m-invite .invite-btn {
+  width: 60px;
+  height: 40px;
+  background: #14a0e1;
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #fff;
+  font-size: 16px;
+}
+/* ----------------------------------------
+ * m-lecturer
+ * ---------------------------------------- */
+.m-lecturer {
+  border: 1px solid #e7e7e7;
+  padding-bottom: 31px;
+}
+.m-lecturer-bd {
+  padding-left: 51px;
+  padding-top: 25px;
+}
+.m-lecturer-bd img {
+  width: 68px;
+  height: 68px;
+  border-radius: 68px;
+}
+.m-lecturer-info {
+  padding-left: 18px;
+  padding-top: 7px;
+}
+.m-lecturer-info dt {
+  font-size: 20px;
+  color: #333;
+}
+.m-lecturer-info dt a {
+  color: #333;
+}
+.m-lecturer-info dt a:hover {
+  color: #1aa9eb;
+}
+.m-lecturer-info dd {
+  font-size: 16px;
+  color: #999;
+  padding-top: 8px;
+}
+.m-lecturer-info .info {
+  margin-top: 12px;
+}
+.m-lecturer-info p {
+  line-height: 30px;
+  color: #666;
+}
+.m-lectureDetail .edit-icon {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 35px;
+  right: 35px;
+  background: url("../images/editor-icon.png") no-repeat;
+  cursor: pointer;
+}
+.m-lectureDetail .m-lecturer-bd {
+  position: relative;
+  padding-left: 28px;
+  padding-top: 28px;
 }
 /*======================================================================
       Responsive

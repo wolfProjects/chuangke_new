@@ -681,12 +681,11 @@ input {
 .main {
   float: left;
   width: 650px;
-  min-height: 1000px;
 }
 .side {
   float: right;
   width: 345px;
-  min-height: 1000px;
+  margin-bottom: 60px;
 }
 /*======================================================================
       Main
@@ -697,9 +696,19 @@ input {
   min-width: 1145px;
   height: 90px;
   margin: 0 auto;
-  background: #fff;
   position: relative;
   z-index: 1000;
+  background: #fff;
+  border-bottom: 1px solid #ebebeb;
+}
+.header .pr.clearfix:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: url("../images/header-shadow.png");
 }
 .header-logo {
   width: 328px;
@@ -1216,6 +1225,7 @@ input {
 }
 .container .side {
   width: 345px;
+  margin-bottom: 60px;
 }
 /*======================================================================
       Responsive

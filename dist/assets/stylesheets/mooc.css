@@ -666,32 +666,6 @@ button {
 .mooc .mooc-detail-body img {
   max-width: 100%;
 }
-.mooc .lecturer {
-  border: 1px solid #e7e7e7;
-  padding-bottom: 31px;
-}
-.mooc .lecturer .lecturer-bd {
-  padding-left: 51px;
-  padding-top: 25px;
-}
-.mooc .lecturer .lecturer-bd img {
-  width: 68px;
-  height: 68px;
-  border-radius: 68px;
-}
-.mooc .lecturer .lecturer-info {
-  padding-left: 10px;
-  padding-top: 4px;
-}
-.mooc .lecturer .lecturer-info dt {
-  font-size: 20px;
-  color: #333;
-}
-.mooc .lecturer .lecturer-info dd {
-  font-size: 16px;
-  color: #999;
-  padding-top: 8px;
-}
 .mooc-list-body .img-box {
   float: left;
   position: relative;
