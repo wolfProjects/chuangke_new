@@ -177,6 +177,29 @@ var app = {
             $('.m-team-member-bd .item .info .close').click(function (){
                 $(this).parent('.info').hide();
             });
+        },
+
+        datepicker: function(){
+            /* simple inline calendar */
+            var dateArr = ["2015/6/1", "2015/6/10", "2015/6/13"];
+
+            //  if has calendar dom, init calendar component
+            try {
+                $('#m-calendar-box').DatePicker({
+                    mode: 'multiple',
+                    inline: true,
+                    calendars: 1,
+                    date: dateArr,
+                    onChange: function(data) {
+                        for(var i=0; i < data.length; i++){
+                            console.log(data[i].getDate());
+                        }
+
+                    }
+                });
+            } catch (err) {
+
+            }
         }
     },
     initApp: function (){
@@ -186,6 +209,7 @@ var app = {
         this.components.floatPanel.init();
         this.components.log.init();
         this.components.teamMember();
+        this.components.datepicker();
 
 
         // log & registration
