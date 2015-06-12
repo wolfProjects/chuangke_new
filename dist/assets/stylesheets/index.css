@@ -651,6 +651,7 @@ button {
 }
 .index-activity-bd .item .info {
   opacity: 0;
+  filter: alpha(opacity=0);
 }
 .index-activity-bd .item img {
   transition: transform 0.8s ease-out;
@@ -658,6 +659,7 @@ button {
 }
 .index-activity-bd .item:hover .info {
   opacity: 1;
+  filter: alpha(opacity=100);
 }
 .index-activity-bd .item:hover img {
   transform: scale(1.1);

@@ -646,6 +646,7 @@ button {
   left: 0;
   font-size: 200px;
   opacity: 0;
+  filter: alpha(opacity=0);
   cursor: pointer;
 }
 .project .summary .btnWrap:hover .btn {
@@ -1019,6 +1020,7 @@ button {
   left: 0;
   bottom: -80px;
   opacity: 0;
+  filter: alpha(opacity=0);
   padding: 10px;
   background: #f9f9f9;
   -webkit-transition: all 0.8s;
@@ -1034,6 +1036,7 @@ button {
 .logic-editor-ft #cytoscape-editor.active {
   bottom: -48px;
   opacity: 1;
+  filter: alpha(opacity=100);
   box-shadow: 0 0 8px #ccc;
 }
 .logic-editor-ft .cytoscape-btn {
@@ -1209,6 +1212,7 @@ button {
   left: 0;
   z-index: 10;
   opacity: 0;
+  filter: alpha(opacity=0);
   cursor: pointer;
 }
 .editPersonalInfo .avatarUpload .avatar-upload .btn {
