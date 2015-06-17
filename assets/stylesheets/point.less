@@ -1,0 +1,90 @@
+/* Qianglong Mo (SukeBeta) 2015 */
+
+@import "base";
+
+.point {
+  background: #fff;
+}
+
+/* point list */
+.point-lists {
+  padding: 0 0 45px 0;
+
+  .listWrap {
+    width: 120%;
+  }
+
+  .item {
+    float: left;
+    width: 505px;
+    height: 340px;
+    margin: 0 10px 10px 0;
+    border: 1px solid #d9d9de;
+  }
+
+  .item:hover {
+    -webkit-box-shadow: 0 10px 8px -6px #ccc;
+    -moz-box-shadow: 0 10px 8px -6px #ccc;
+    box-shadow: 0 10px 8px -6px #ccc;
+
+    .thumb {
+      img {
+        .transform(scale(1));
+      }
+    }
+  }
+
+  .thumb {
+    display: block;
+    height: 200px;
+    background: #ccc;
+    overflow: hidden;
+
+    img {
+      display: block;
+      width: 100%;
+      height: 200px;
+      .transform(scale(1.02));
+      .transition(all, .45s);
+    }
+  }
+
+  .bd {
+    padding: 0 30px;
+  }
+
+  dt {
+    padding: 20px 0 12px 0;
+    a{
+      .fs18;
+      .c_normal;
+      font-weight: bolder;
+    }
+
+    a:hover {
+      .c_blue;
+    }
+  }
+
+
+  dd {
+    .fs14;
+    line-height: 19px;
+    .c_normal;
+  }
+
+  .from {
+    margin-top: 15px;
+    .c_normal;
+    .fs12;
+
+    a {
+      .c_normal;
+      margin-right: 18px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  }
+}

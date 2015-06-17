@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    font-family: "microsoft yahei", Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a img {
+    outline: none;
+}
+
+.fl { float: left; }
+.fr { float: right; }
+
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+    overflow:hidden;
+}
+.clearfix {
+    zoom:1;
+}
+
+.zhibo {
+    height: 1000px;
+    background: url("../images/bg.jpg") no-repeat center top;
+}
+
+.zhiboWrap {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.zhibo-header {
+    padding: 54px 0 24px 0;
+}
+
+.zhibo-logo img {
+    display: block;
+}
+
+.zhibo-title {
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: bolder;
+    color: #000;
+}
+
+.zhibo-body {
+    height: 775px;
+    padding: 25px 25px 0 25px;
+    background: url("../images/inner-bg.png") no-repeat;
+}
