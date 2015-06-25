@@ -1,0 +1,136 @@
+/* Qianglong Mo (SukeBeta) 2015 */
+
+@import "base";
+
+/*======================================================================
+      Search
+  ======================================================================*/
+.search-list {
+  padding-bottom: 65px;
+  background: #fff;
+}
+
+.search-list-hd {
+  margin-bottom: 15px;
+
+  h1 {
+    .c_heavy;
+    .fs18;
+    padding: 30px 0 15px 0;
+    margin-bottom: 5px;
+    border-bottom: 1px solid #d9d9de;
+  }
+}
+
+.search-list-hd.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+  padding: 10px 0;
+  margin: 0 auto;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.search-list-category {
+  line-height: 32px;
+  .c_heavy;
+  .fs18;
+
+  span {
+    margin-right: 30px;
+  }
+
+  a {
+    .c_heavy;
+    margin-right: 35px;
+  }
+
+  a:hover,
+  a.active {
+    .c_blue;
+  }
+}
+
+.search-list-bd {
+  .listWrap {
+    margin-bottom: 35px;
+
+    dt {
+      .fs18;
+      .c_heavy;
+      padding: 12px 0;
+      border-bottom: 2px solid #d9d9de;
+    }
+
+    dd {
+      overflow: hidden;
+    }
+  }
+
+  .list {
+  }
+
+  .item {
+    padding: 20px 0;
+    border-bottom: 1px solid #d9d9de;
+    position: relative;
+
+    .thumb {
+      overflow: hidden;
+      width: 98px;
+      height: 98px;
+      margin-right: 32px;
+      border: 1px solid #d9d9de;
+    }
+
+    .info {
+      width: 590px;
+
+      p {
+        line-height: 20px;
+        .fs14;
+        .c_normal;
+      }
+    }
+
+    h2 {
+
+      a {
+        .fs18;
+        .c_normal;
+      }
+    }
+  }
+
+  .more {
+    position: absolute;
+    bottom: 22px;
+    right: 22px;
+    padding: 0 24px 0 0;
+    .fs14;
+    .c_light;
+    text-decoration: none;
+    background: url("../images/more-arrow.png") no-repeat right center;
+  }
+
+  .more:hover {
+    color: #2694bb;
+    background: url("../images/more-arrow-active.png") no-repeat right center;
+  }
+}
+
+.search-list-fail {
+  background: #fff;
+  padding: 20px;
+  .mt15;
+  .mb45;
+//  border: 1px solid #d9d9de;
+
+  h1 {
+    font-weight: normal;
+    .c_heavy;
+    .fs18;
+  }
+}
