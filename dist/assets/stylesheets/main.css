@@ -711,86 +711,9 @@ input {
   background: url("../images/header-shadow.png");
 }
 .header-logo {
-  width: 328px;
+  width: 302px;
   height: 90px;
-  margin-left: 30px;
-  background: url("../images/header-logo.png") no-repeat;
-}
-.header-logo-container {
-  display: inline-block;
-  width: 328px;
-  height: 90px;
-  position: relative;
-}
-.header-logo-container .trangle01 {
-  position: absolute;
-  top: 18px;
-  left: 148px;
-  width: 10px;
-  height: 10px;
-  background: url("../images/header-trangle01.png") no-repeat;
-}
-.header-logo-container .trangle02 {
-  position: absolute;
-  top: 26px;
-  left: 140px;
-  width: 4px;
-  height: 9px;
-  background: url("../images/header-trangle02.png") no-repeat;
-}
-.header-logo-container .trangle03 {
-  position: absolute;
-  top: 35px;
-  left: 148px;
-  width: 7px;
-  height: 8px;
-  background: url("../images/header-trangle03.png") no-repeat;
-}
-.header-logo-container .trangle04 {
-  position: absolute;
-  top: 35px;
-  left: 166px;
-  width: 8px;
-  height: 6px;
-  background: url("../images/header-trangle04.png") no-repeat;
-}
-.header-logo-container .trangle05 {
-  position: absolute;
-  top: 43px;
-  left: 155px;
-  width: 8px;
-  height: 8px;
-  background: url("../images/header-trangle05.png") no-repeat;
-}
-.header-logo.animation .trangle01 {
-  animation: logoRotate 3s infinite;
-  -webkit-animation: logoRotate 3s infinite;
-  -moz-animation: logoRotate 3s infinite;
-  -o-animation: logoRotate 3s infinite;
-}
-.header-logo.animation .trangle02 {
-  animation: logoRotate 4s infinite;
-  -webkit-animation: logoRotate 4s infinite;
-  -moz-animation: logoRotate 4s infinite;
-  -o-animation: logoRotate 4s infinite;
-}
-.header-logo.animation .trangle03 {
-  animation: logoRotate 4.2s infinite;
-  -webkit-animation: logoRotate 4.2s infinite;
-  -moz-animation: logoRotate 4.2s infinite;
-  -o-animation: logoRotate 4.2s infinite;
-}
-.header-logo.animation .trangle04 {
-  animation: logoRotate 3.5s infinite;
-  -webkit-animation: logoRotate 3.5s infinite;
-  -moz-animation: logoRotate 3.5s infinite;
-  -o-animation: logoRotate 3.5s infinite;
-}
-.header-logo.animation .trangle05 {
-  animation: logoRotate 2.6s infinite;
-  -webkit-animation: logoRotate 2.6s infinite;
-  -moz-animation: logoRotate 2.6s infinite;
-  -o-animation: logoRotate 2.6s infinite;
+  background: url("../images/header-logo.jpg") no-repeat;
 }
 .header-nav {
   padding: 28px 0 0 54px;
