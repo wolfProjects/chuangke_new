@@ -770,7 +770,7 @@ button {
   margin-top: -10px;
 }
 .project-list-hd .title .search .text {
-  width: 250px;
+  width: 240px;
   height: 45px;
   line-height: 17px;
   padding: 14px 10px;
@@ -795,12 +795,12 @@ button {
   cursor: pointer;
 }
 .project-list-hd .title ul {
-  margin: 0 0 0 -30px;
+  margin: 0 0 0 -18px;
 }
 .project-list-hd .title li {
   float: left;
-  padding: 0 30px;
-  font-size: 20px;
+  padding: 0 18px;
+  font-size: 18px;
   background: url("../images/project-list-hd-split.png") no-repeat left center;
 }
 .project-list-hd .title li a {
@@ -819,7 +819,19 @@ button {
 .project-list-hd .title li.active a {
   font-weight: bolder;
   color: #1aa9eb;
-  font-size: 26px;
+  font-size: 22px;
+}
+.project-list-hd .title .create-btn {
+  width: 150px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  margin-top: -10px;
+  font-size: 18px;
+  color: #fff;
+  background: #1aa9eb;
+  border: none;
+  cursor: pointer;
 }
 .project-list-hd .body-hd {
   margin-bottom: 50px;
@@ -1235,4 +1247,23 @@ button {
 }
 .editPersonalInfo .form-validation {
   margin-top: 8px;
+}
+.lecture-editor {
+  margin-top: 20px;
+}
+.lecture-editor span {
+  color: #15a0e1;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+}
+.m-article .btnWrap {
+  padding: 0 55px 30px 55px;
+}
+.m-article .m-btn-blue {
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  height: 45px;
+  line-height: 45px;
 }

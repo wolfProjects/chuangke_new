@@ -157,7 +157,6 @@
                 <!-- component: lecturer -->
                 <div class="m-lecturer m-lectureDetail">
                     <div class="m-lecturer-bd clearfix">
-                        <i class="edit-icon" onclick="javascript:$('.editPersonalInfo').fadeIn();"></i>
                         <a class="avatar fl" href="">
                             <img src="assets/images/lecturer-top.png" >
                         </a>
@@ -170,6 +169,11 @@
                                 <p>地址：中国上海</p>
                                 <p>email：中国上海</p>
                                 <p>注册时间：2015-06-01</p>
+                            </div>
+
+                            <div class="lecture-editor">
+                                <span onclick="javascript:$('.editPersonalInfo').fadeIn();">编辑个人信息</span>
+                                <span class="ml15" onclick="javascript:$('.resetPasswordPanel').fadeIn();">修改密码</span>
                             </div>
                         </div>
                     </div>
@@ -188,6 +192,9 @@
                         <li class="text"><a href="#">Liunx 开发源代码代码代码</a></li>
                         <li class="text"><a href="#">Liunx 开发源代码代码代码</a></li>
                     </ul>
+                    <div class="btnWrap">
+                        <a class="m-btn-blue" href="#">创建我的项目</a>
+                    </div>
                 </div>
                 <!-- end article -->
 
@@ -398,6 +405,65 @@
 <!-- end edit-personal-info -->
 <!-- end float panel -->
 
+
+
+<!-- float panel -->
+<!-- resetPasswordPanel -->
+<div class="m-floatpanel resetPasswordPanel hide">
+    <div class="m-floatpanel-bd">
+        <div class="m-floatpanel-title clearfix">
+            <i class="m-floatpanel-close"></i>
+            <h2 class="fl">重置密码</h2>
+        </div>
+
+        <!-- form -->
+        <div class="m-form">
+            <form action="">
+                <!-- 表单验证API(使用方法看下方dom示例)：
+                        - 为需要出现错误提示的表单行div.form-group加上class: .form-error
+                        - 在input或者textarea的dom后面追加div.form-validation的dom
+                -->
+                <div class="form-group clearfix form-error">
+                    <label class="label" for="">旧密码：</label>
+                    <div class="main">
+                        <input class="form-control" type="password" name="" id=" tabindex="6"/>
+                        <div class="form-validation">
+                            <i class="icon"></i><span>旧密码输入不正确</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">新密码：</label>
+                    <div class="main">
+                        <input class="form-control" type="password" name="" id="" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix">
+                    <label class="label" for="">确认新密码：</label>
+                    <div class="main">
+                        <input class="form-control" type="password" name="" id="" tabindex="6"/>
+                    </div>
+                </div>
+                <div class="form-group clearfix pt10">
+                    <label class="label" for="">&nbsp;</label>
+                    <div class="main">
+                        <input class="form-btn-submit enableSelect resetPasswordNextStep" type="button" name="" id="" value="确认修改" tabindex="6"/>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- end form -->
+
+        <!-- success panel -->
+        <div class="m-floatpanel-success text-center hide">
+            <i class="icon-floatpanel-success"></i>
+            <p class="text">重置密码成功</p>
+            <p><span class="btn toLogIn">登陆</span></p>
+        </div>
+    </div>
+    <div class="m-floatpanel-mask"></div>
+</div>
+<!-- end resetPasswordPanel -->
 
 
 <!-- injector:js -->
