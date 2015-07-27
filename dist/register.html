@@ -121,34 +121,59 @@
                 <h1>您众创空间的基本信息</h1>
 
                 <div class="clearfix">
-                    <div class="left1 fl">
-                        <p>空间名称：</p>
-                        <input type="text" name="" id="" placeholder="12字以内"/>
-                        <p>空间介绍：</p>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="400字以内"></textarea>
-                    </div>
-                    <div class="right1 fr">
-                        <p>众创空间的Logo：</p>
-                        <div class="upload">
-                            <img src="assets/images/img-register-upload.jpg" alt="" width="176" height="176"/>
+                    <p>空间名称：</p>
+                    <input type="text" name="" id="" placeholder="12字以内"/>
+                    <p>空间介绍：</p>
+                    <textarea name="" id="" cols="30" rows="10" placeholder="400字以内"></textarea>
+
+                    <div class="clearfix">
+                        <div class="upload-logo fl">
+                            <p>众创空间Logo：</p>
+                            <div class="upload">
+                                <img src="assets/images/img-register-upload.jpg" alt="" width="108" height="108"/>
+                            </div>
+                            <div class="upload-btn">
+                                上传图片
+                                <input type="file"/>
+                            </div>
                         </div>
-                        <div class="upload-btn">
-                            上传图片
-                            <input type="file"/>
+                        <div class="upload-summary fl ml30">
+                            <p>封面图：</p>
+                            <div class="upload">
+                                <img src="assets/images/img-register-summary.jpg" alt="" width="247" height="108"/>
+                            </div>
+                            <div class="upload-btn">
+                                上传图片
+                                <input type="file"/>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <p>网站链接：</p>
+                <p>网站地址：</p>
                 <input type="text" placeholder=""/>
 
                 <p>空间地理地址：</p>
                 <input type="text" placeholder="50字以内"/>
 
                 <p>空间开放时间：</p>
-                <input type="text" placeholder="内容60字以内"/>
+                <input type="text" placeholder="60字以内"/>
+
+                <p>提供创客设备与服务：</p>
+                <input type="text" placeholder="30字以内"/>
+
+                <p>联系方式：</p>
+                <input type="text" placeholder="30字以内"/>
+
+                <div class="validate-code">
+                    <p>验证码：</p>
+                    <div class="validate-code-wrap">
+                        <input class="validate-code-txt" type="text" placeholder="60字以内"/>
+                        <img class="validate-code-img" src="assets/images/validate-code.jpg" alt="" width="126" height="48"/>
+                    </div>
+                </div>
                 
-                <div class="btnWrap mt35">
+                <div class="btnWrap mt20">
                     <input class="btn btn-primary" type="submit" value="提交"/>
                 </div>
             </div>

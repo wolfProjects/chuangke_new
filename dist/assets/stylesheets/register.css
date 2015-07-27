@@ -636,8 +636,9 @@ button {
   /* col03 */
 }
 .register .col01 {
-  height: 1040px;
-  padding: 300px 163px 0 163px;
+  min-height: 1173px;
+  padding: 270px 163px 45px 163px;
+  font-size: 14px;
   background: url("../images/bg-register-01.jpg") no-repeat;
 }
 .register .col01 .left {
@@ -670,7 +671,6 @@ button {
   width: 480px;
   line-height: 1.5em;
   color: #222;
-  font-size: 16px;
 }
 .register .col01 .right h1 {
   margin: 17px 0 22px 0;
@@ -683,22 +683,22 @@ button {
 .register .col01 .right input {
   display: block;
   width: 100%;
-  height: 42px;
+  height: 32px;
   line-height: 22px;
   padding: 10px 15px;
   margin-bottom: 15px;
-  font-size: 16px;
+  font-size: 14px;
   border: 1px solid #cad3de;
   color: #666;
 }
 .register .col01 .right textarea {
   display: block;
   width: 100%;
-  height: 132px;
+  height: 82px;
   line-height: 22px;
   padding: 10px 15px;
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 8px;
+  font-size: 14px;
   border: 1px solid #cad3de;
   color: #666;
   outline: none;
@@ -707,22 +707,13 @@ button {
 .register .col01 .right p {
   margin-bottom: 3px;
 }
-.register .col01 .right .left1 {
-  width: 282px;
-}
-.register .col01 .right .right1 {
-  width: 178px;
-}
-.register .col01 .right .right1 .upload {
+.register .col01 .right .upload {
   border: 1px solid #cad3de;
 }
-.register .col01 .right .right1 .upload img {
-  width: 176px;
-  height: 176px;
-}
-.register .col01 .right .right1 .upload-btn {
+.register .col01 .right .upload-btn {
   overflow: hidden;
   position: relative;
+  width: 110px;
   height: 30px;
   line-height: 30px;
   margin-top: 8px;
@@ -732,19 +723,56 @@ button {
   border: 1px solid #cad3de;
   cursor: pointer;
 }
-.register .col01 .right .right1 .upload-btn input {
+.register .col01 .right .upload-btn input {
   position: absolute;
   font-size: 120px;
   cursor: pointer;
 }
-.register .col01 .right .right1 .upload-btn:hover {
+.register .col01 .right .upload-btn:hover {
   background: #fff;
+}
+.register .col01 .right .validate-code {
+  width: 285px;
+}
+.register .col01 .right .validate-code input {
+  display: inline-block;
+  width: 135px;
+  margin-right: 15px;
+}
+.register .col01 .right .validate-code-txt {
+  margin-top: 7px;
+}
+.register .col01 .right .validate-code-img {
+  cursor: pointer;
 }
 .register .col01 .right .btnWrap {
   width: 280px;
 }
 .register .col01 .right .btnWrap .btn {
+  width: 285px;
+  height: 45px;
+  line-height: 45px;
+  padding: 0;
   color: #fff;
+  font-size: 20px;
+  border-radius: 0;
+  border: none;
+}
+.register .col01 .right .upload-logo {
+  width: 110px;
+  margin-bottom: 15px;
+}
+.register .col01 .right .upload-logo img {
+  width: 108px;
+  height: 108px;
+}
+.register .col01 .right .upload-summary {
+  width: 250px;
+  margin-bottom: 15px;
+}
+.register .col01 .right .upload-summary img {
+  width: 247px;
+  height: 108px;
 }
 .register .col02 {
   padding: 48px 165px 72px 165px;
@@ -753,6 +781,7 @@ button {
 }
 .register .col02 .col02-title {
   font-size: 18px;
+  font-weight: normal;
   line-height: 30px;
   padding: 0 0 4px 0;
 }
